@@ -159,6 +159,67 @@ Created using information from W3S*/
     filter: blur(4px);
 }
 
+.house-container {
+    margin: 0 auto;
+    right: 0;
+    width: 70vw;
+    position: relative;
+}
+
+.col-1 {
+    flex-direction: column;
+}
+
+.col-2 {
+    flex-direction: column;
+}
+
+.house {
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1.5rem 4rem black;
+    border-radius: 8px;
+    margin: 2rem;
+    outline-offset: 1rem;
+    cursor: pointer;
+}
+
+.house:hover {
+    outline: .8rem solid #cec8aa;
+    transform: scale(1.05);
+}
+
+.house-link {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.house-link img {
+    padding: 1rem;
+}
+
+.red {
+    background-color: #A6332E;
+}
+
+.yellow {
+    background-color: #EFBC2F;
+}
+
+.blue {
+    background-color: #3C4E91;
+}
+
+.green {
+    background-color: #366447;
+}
+
+
 @keyframes scale {
     100% {
         transform: scale(1);
