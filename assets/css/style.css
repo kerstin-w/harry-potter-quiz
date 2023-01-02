@@ -132,6 +132,9 @@ Created using information from W3S*/
     justify-content: space-between;
 }
 
+.game-container {
+    width: fit-content;
+}
 .text {
     text-transform: uppercase;
     position: relative;
@@ -268,6 +271,33 @@ Created using information from W3S*/
         opacity: 1;
         filter: blur(0);
     }
+}
+
+/* Footer */
+#footer {
+    width: auto;
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+}
+
+.social-networks {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-networks li {
+    padding: 1rem 2rem 1rem;
+}
+
+.social-networks i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.social-networks i:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 @media screen and (max-height: 450px) {
