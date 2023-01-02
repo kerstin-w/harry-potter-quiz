@@ -18,20 +18,39 @@
 
     <!-- CSS Style Sheet-->
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
 
-    <main>
-        <div>Navigation</div>
-        <div>Game Header</div>
-        <div>Main Game</div>
+    <main id="hero" class="flex">
+        <!--HAMBURGER MENU -->
+        <!--Created using information from W3S-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">High Scores</a>
+        </div>
+        <div id="header" class="game-header flex">
+            <span id="hamburger" onclick="openNav()">
+                <i class="fa fa-bars hamburger"></i>
+            </span>
+            <div class="header-logo">
+                <a href="index.html">
+                    <img class="logo drop-shadow" src="assets/images/logo.png" alt="Harry Potter Logo">
+                    <h1 class="shadow">Harry Potter Quiz</h1>
+                </a>
+            </div>
+        </div>
+        <div id="main">Main Game</div>
     </main>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/db4afc7d29.js" crossorigin="anonymous"></script>
 
     <!-- Main JavaScript -->
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
