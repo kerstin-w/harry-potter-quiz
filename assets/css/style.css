@@ -1,0 +1,16 @@
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Nunito, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #33374B, #0c4c6c);
+    overflow-x: hidden;
+    color: #fff;
+}
