@@ -302,7 +302,12 @@ Created using information from W3S*/
     }
 }
 
-/* Games Page */ 
+/* Games Page */
+.choice-text {
+    font-size: 1.8rem;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
 
 .choice-text>img {
     max-width: 80%;
@@ -315,7 +320,6 @@ Created using information from W3S*/
 }
 
 .choice {
-    font-size: 1.8rem;
 }
 
 /*Score and Progress Bar*/
@@ -342,12 +346,28 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: #A6332E;
+    background-color: #366447;
     box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.05);
 }
 
 #scoreboard {
-margin-top: 2rem;
+    margin-top: 2rem;
+}
+
+.correct-text {
+    color: green !important;
+}
+
+.incorrect-text {
+    color: red !important;
+}
+
+.correct {
+    outline: .8rem solid green !important;
+}
+
+.incorrect {
+    outline: .8rem solid red !important;
 }
 
 /* Footer */
