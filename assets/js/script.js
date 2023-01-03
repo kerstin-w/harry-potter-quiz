@@ -2,7 +2,7 @@
 
 // Hamburger Menu
 /**
- * Set width, margin and background color for hamburger menu
+ * Set width, margin for hamburger menu
  */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -13,7 +13,7 @@ function openNav() {
 
 
 /**
- * Reverse width, margin and background color for hamburger menu
+ * Reverse width, margin for hamburger menu
  */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
@@ -21,3 +21,15 @@ function closeNav() {
   document.getElementById("hamburger").style.visibility = "visible";
   document.getElementById("hamburger").style.marginLeft = "0";
 }
+
+//Game 
+
+/**
+ * Start the game with house picked by user
+ */
+function newHouse(currentHouse) {
+  const housePick = currentHouse.getAttribute("data-house")
+  console.log(housePick);
+  localStorage.setItem('housePick', housePick);
+}
+
