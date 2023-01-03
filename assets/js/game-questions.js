@@ -20,12 +20,12 @@ const questionsArray = {
             correctAnswer: 4
         },
         {
-            question: 'Who is the house ghost of Gryffindor?',
-            choice1: 'Bloody Baron',
-            choice2: 'Nearly Headless Nick',
-            choice3: 'Moaning Myrtle',
-            choice4: 'Peeves',
-            correctAnswer: 2
+            question: 'Which on is the Gryffindor resident ghost?',
+            choice1: 'assets/images/headlessnick.webp',
+            choice2: 'assets/images/fatfair.webp',
+            choice3: 'assets/images/baron.webp',
+            choice4: 'assets/images/myrtle.webp',
+            correctAnswer: 1
         },
         {
             question: 'Who is the Gryffindor Head of House at Hogwarts today?',
