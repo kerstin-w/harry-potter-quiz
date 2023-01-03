@@ -69,8 +69,9 @@ a {
     background: linear-gradient(to right, #33374B, #0c4c6c);
     width: 100%;
     padding: 50px;
-    flex-direction: column;
     transition: all 0.5s;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hamburger {
@@ -120,7 +121,7 @@ Created using information from W3S*/
 
 .sidenav a:hover {
     color: #aaaaaa;
-    text-shadow: 2px 2px 2px rgba(255,255,255,0.64);
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.64);
 }
 
 .sidenav .closebtn {
@@ -132,11 +133,13 @@ Created using information from W3S*/
 }
 
 .game-header {
+    width: 100%;
 }
 
 .game-container {
     width: fit-content;
 }
+
 .text {
     text-transform: uppercase;
     position: relative;
@@ -208,6 +211,18 @@ Created using information from W3S*/
     padding: 1rem;
 }
 
+.small {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.house.small:hover {
+    outline: none;
+    transform: none;
+}
+
+
 .red {
     background-color: #A6332E;
 }
@@ -274,6 +289,9 @@ Created using information from W3S*/
         filter: blur(0);
     }
 }
+
+/* Games Page */ 
+
 
 /* Footer */
 #footer {
