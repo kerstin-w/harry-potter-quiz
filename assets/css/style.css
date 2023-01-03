@@ -44,6 +44,11 @@ a {
     align-items: center;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
+
 .shadow {
     text-shadow: 0px 15px 25px rgba(0, 0, 0, .15), 0px 5px 10px rgba(0, 0, 0, .05);
 }
@@ -311,6 +316,38 @@ Created using information from W3S*/
 
 .choice {
     font-size: 1.8rem;
+}
+
+/*Score and Progress Bar*/
+progress {
+    width: 30vw;
+    height: 10px;
+}
+
+progress:after {
+    content: "";
+    display: block;
+    width: 30vw;
+    height: 10px;
+    margin-top: -11px;
+    border: solid hsl(0, 0%, 90%);
+    border-width: 1px 0;
+    background-position: 0% 0%;
+    background-size: 40px 10px;
+    background-repeat: repeat-x;
+}
+
+progress::-webkit-progress-bar {
+    background-color: white;
+}
+
+progress::-webkit-progress-value {
+    background-color: #A6332E;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+}
+
+#scoreboard {
+margin-top: 2rem;
 }
 
 /* Footer */

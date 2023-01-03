@@ -3,6 +3,13 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const housePick = localStorage.getItem("housePick");
+const progressText = document.getElementById('progress-text');
+const scoreText = document.getElementById('score');
+const progressBar = document.getElementById('progress-bar');
+
+// Const with the value of points per correct question and max number of questions per game
+const correctQuestion = 10;
+const maxQuestions = 10;
 
 //Declare variables for game
 let currentQuestion = {};
@@ -36,7 +43,7 @@ function newGame(housePick) {
  * Load new question
  * */
 function getNewQuestion() {
-
+    
     questionCounter++;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
