@@ -110,8 +110,16 @@ choices.forEach(choice => {
         let wrongAnswerReply = ['Expelliarmus! We got you! Wrong Answer', 'Are you a muggle? Wrong Answer!', "Wrong Answwer!"];
         const wrongAnswerReplyIndex = Math.floor(Math.random() * wrongAnswerReply.length);
         const wrongAnswerReplyRandom = wrongAnswerReply[wrongAnswerReplyIndex];
-        selectedChoice.classList.add(classToApply);
 
+        //Add class to DIV in case choices were pictures and not text
+        if (selectedChoice.nodeName === 'IMG') {
+            selectedChoice.parentElement.classList.add(classToApply);
+        } else {
+            selectedChoice.classList.add(classToApply);
+            console.log(selectedChoice.nodeName);
+        }
+
+        //Display random replies to user and show correct answer, in case user was wrong
         if (selectedAnswer == currentQuestion.correctAnswer) {
             incrementScore(pointsCorrectAnswer);
             question.innerHTML = corrrectAnswerReplyRandom;
