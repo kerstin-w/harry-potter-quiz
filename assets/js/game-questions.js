@@ -21,10 +21,10 @@ const questionsArray = {
         },
         {
             question: 'Which on is the Gryffindor resident ghost?',
-            choice1: 'assets/images/headlessnick.webp',
-            choice2: 'assets/images/fatfair.webp',
-            choice3: 'assets/images/baron.webp',
-            choice4: 'assets/images/myrtle.webp',
+            choice1: 'assets/images/game-questions/headlessnick.webp',
+            choice2: 'assets/images/game-questions/fatfair.webp',
+            choice3: 'assets/images/game-questions/baron.webp',
+            choice4: 'assets/images/game-questions/myrtle.webp',
             correctAnswer: 1
         },
         {
@@ -110,10 +110,10 @@ const questionsArray = {
         },
         {
             question: 'Which on is the Hufflepuff resident ghost?',
-            choice1: 'assets/images/headlessnick.webp',
-            choice2: 'assets/images/fatfair.webp',
-            choice3: 'assets/images/baron.webp',
-            choice4: 'assets/images/myrtle.webp',
+            choice1: 'assets/images/game-questions/headlessnick.webp',
+            choice2: 'assets/images/game-questions/fatfair.webp',
+            choice3: 'assets/images/game-questions/baron.webp',
+            choice4: 'assets/images/game-questions/myrtle.webp',
             correctAnswer: 2
         },
         {
@@ -304,10 +304,10 @@ const questionsArray = {
     },
     {
         question: 'Which on is the Slytherin resident ghost?',
-        choice1: 'assets/images/headlessnick.webp',
-        choice2: 'assets/images/fatfair.webp',
-        choice3: 'assets/images/baron.webp',
-        choice4: 'assets/images/myrtle.webp',
+        choice1: 'assets/images/game-questions/headlessnick.webp',
+        choice2: 'assets/images/game-questions/fatfair.webp',
+        choice3: 'assets/images/game-questions/baron.webp',
+        choice4: 'assets/images/game-questions/myrtle.webp',
         correctAnswer: 3
     },
     {
