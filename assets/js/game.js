@@ -7,9 +7,9 @@ const scoreText = document.getElementById('score');
 const housePick = localStorage.getItem("housePick");
 const progressBar = document.getElementById('progress-bar');
 
-// Const with the value of points per correct question and max number of questions per game
+// Const for points for each question and maximum questions
 const pointsCorrectAnswer = 10;
-const maxQuestions= 10;
+const maxQuestions = 10;
 
 //Declare variables for game
 let currentQuestion = {};
@@ -17,7 +17,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 let gameQuestions = [];
-let time = 1500;
+let time = 2000;
 let acceptingAnswers;
 
 //Wait for the DOM to finish loading before running the game
@@ -34,9 +34,11 @@ function newGame(housePick) {
     gameQuestions = questionsArray[housePick];
     availableQuestions = [...gameQuestions];
     getNewQuestion();
-    localStorage.setItem('housePick', housePick);
-    console.log(housePick);
+
+    //Display House logo depending on which house was picked by the user
     document.getElementById('house-logo').innerHTML = `<img src="assets/images/${housePick}.png" alt="Hogwards House Logo">`;
+
+    localStorage.setItem('housePick', housePick);
 }
 
 
@@ -46,21 +48,27 @@ function newGame(housePick) {
 function getNewQuestion() {
     localStorage.setItem('lastScore', score);
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-        return window.location.assign('game-end.html');;
+
+        //Forward user to end page once game is finished
+        return window.location.assign('index.html');
     }
 
+    //Counter for Scoreboard. Shows user numer of question and updates progrss bar
     questionCounter++;
     progressText.innerText = 'Question ' + questionCounter + '/' + maxQuestions;
+    progressBar.value += 1;
 
-
+    //Update question
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
+    //Update answer
     choices.forEach(choice => {
         const choiceNumber = choice.dataset.choice;
         const image = currentQuestion['choice' + choiceNumber]
 
+        //Differentiate between image and text and display the appropriate answer
         if (currentQuestion['choice' + choiceNumber].includes('assets/images')) {
             choice.replaceChildren();
             choice.innerHTML += `<img src=${image} data-choice="${choiceNumber}">`
@@ -71,12 +79,13 @@ function getNewQuestion() {
 
     availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
-    progressBar.value += 1;
 }
 
 
 /**
- * Compare user's answer with correct answer. If it is true the user will get displayed a message in green and if it is wrong a message appears in red
+ * Compare user's answer with correct answer. 
+ * If it is true the user will get displayed a message in green.
+ * If it is wrong a message appears in red
  * */
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
@@ -92,50 +101,42 @@ choices.forEach(choice => {
         const classToApply =
             selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
 
-        let correctAnswerReply = ['Correct'];
+        //Array for the correct answer to the user
+        let correctAnswerReply = ['Bombardo! Correct Answer!', 'Correct Answer! You are doing magical!', 'Yeah! Correct Answer!'];
         const correctAnswerReplyIndex = Math.floor(Math.random() * correctAnswerReply.length);
         const corrrectAnswerReplyRandom = correctAnswerReply[correctAnswerReplyIndex];
 
-        let wrongAnswerReply = ['Wrong'];
-
+        //Array for the inccorrect answer to the user
+        let wrongAnswerReply = ['Expelliarmus! We got you! Wrong Answer', 'Are you a muggle? Wrong Answer!', "Wrong Answwer!"];
         const wrongAnswerReplyIndex = Math.floor(Math.random() * wrongAnswerReply.length);
         const wrongAnswerReplyRandom = wrongAnswerReply[wrongAnswerReplyIndex];
         selectedChoice.classList.add(classToApply);
 
         if (selectedAnswer == currentQuestion.correctAnswer) {
             incrementScore(pointsCorrectAnswer);
-
-            if (questionCounter <= 2) {
-                question.innerHTML = correctAnswerReply[1];
-            } else if (questionCounter == maxQuestions) {
-                question.innerHTML = correctAnswerReply[0];
-            } else {
-                question.innerHTML = corrrectAnswerReplyRandom;
-            }
+            question.innerHTML = corrrectAnswerReplyRandom;
             question.classList.add('correct-text');
 
         } else {
-            if (questionCounter == maxQuestions || questionCounter <= 2) {
-                question.innerHTML = wrongAnswerReply[0];
-            } else {
-                question.innerHTML = wrongAnswerReplyRandom;
-            }
-
+            question.innerHTML = wrongAnswerReplyRandom;
             question.classList.add('incorrect-text');
             currentCorrectAnswerBox.classList.add('correct');
-
         }
 
-        loadNewQuestion(() => {
+        /*Set the time out and load new question. 
+        Created using information from FreeCodeCamp.*/
+        setTimeout(() => {
             selectedChoice.classList.remove(classToApply);
             currentCorrectAnswerBox.classList.remove('correct');
-            question.classList.remove('correct-text');
-            question.classList.remove('incorrect-text');
+            question.classList.remove('correct-text', 'incorrect-text');
             getNewQuestion();
         }, time);
     });
 });
 
+/**
+ * Update and display current score
+ * */
 function incrementScore(num) {
     score += num;
     scoreText.innerText = score;
