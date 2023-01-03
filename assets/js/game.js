@@ -1,3 +1,4 @@
+'use strict';
 // Declare const for DOM elements
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
@@ -45,12 +46,13 @@ function getNewQuestion() {
     choices.forEach(choice => {
         const choiceNumber = choice.dataset.choice;
         const image = currentQuestion['choice' + choiceNumber]
+        console.log(choice.firstElementChild);
 
         if (currentQuestion['choice' + choiceNumber].includes('assets/images')) {
             choice.replaceChildren();
             choice.innerHTML += `<img src=${image} data-choice="${choiceNumber}">`
         } else {
-            choice.innerText = currentQuestion['choice' + choiceNumber];
+            choice.firstElementChild.innerText = currentQuestion['choice' + choiceNumber];
         }
     });
 
