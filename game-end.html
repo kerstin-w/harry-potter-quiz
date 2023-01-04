@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harry Potter Quiz | Play your online quiz">
+    <meta name="keywords" content="Games, Quiz, Harry Potter, Hogwards, Wizard, Magic">
+
+    <!-- Website Title -->
+    <title>Harry Potter Quiz🧙</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+
+    <!-- CSS Style Sheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<header>
+    <div id="hero" class="flex">
+        <!--HAMBURGER MENU -->
+        <!--Created using information from W3S-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">High Scores</a>
+        </div>
+        <div id="header" class="game-header flex">
+            <span id="hamburger" onclick="openNav()">
+                <i class="fa fa-bars hamburger"></i>
+            </span>
+            <div class="header-logo flex" id="header-logo">
+                <a href="index.html">
+                    <img class="logo drop-shadow" src="assets/images/logo.png" alt="Harry Potter Logo">
+                    <h1 class="shadow">Harry Potter Quiz</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <!-- Game Section -->
+    <main id="main" class="flex">
+
+        <div id="end" class="flex">
+            <div class="box-score">
+                Your Score
+                <h3 id="final-score" class="">0</h3>
+            </div>
+            <form class="flex">
+                <input class="" type="text" name="username" id="username" placeholder="username"
+                    required maxlength="12" />
+                <button type="submit" class="btn" id="save-score">
+                    <span><i class="fa-solid fa-floppy-disk"></i></span> Save your score
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer">
+        <ul class="social-networks flex">
+            <li>
+                <a href="https://www.linkedin.com/in/kerstin-weibeler-9532688b/" target="_blank" rel="noopener"
+                    aria-label="Visit my LinkedIn page (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/kerstin-w" target="_blank" rel="noopener"
+                    aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
+            </li>
+        </ul>
+        <p>Designed by Kerstin Weibeler 2023</p>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/db4afc7d29.js" crossorigin="anonymous"></script>
+
+    <!-- Main JavaScript -->
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

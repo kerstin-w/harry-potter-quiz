@@ -50,7 +50,7 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
 
         //Forward user to end page once game is finished
-        return window.location.assign('index.html');
+        return window.location.assign('game-end.html');
     }
 
     //Counter for Scoreboard. Shows user numer of question and updates progrss bar
@@ -66,12 +66,12 @@ function getNewQuestion() {
     //Update answer
     choices.forEach(choice => {
         const choiceNumber = choice.dataset.choice;
-        const image = currentQuestion['choice' + choiceNumber]
+        const imageChoice = currentQuestion['choice' + choiceNumber]
 
         //Differentiate between image and text and display the appropriate answer
         if (currentQuestion['choice' + choiceNumber].includes('assets/images')) {
             choice.replaceChildren();
-            choice.innerHTML += `<img src=${image} data-choice="${choiceNumber}">`
+            choice.innerHTML += `<img src=${imageChoice} data-choice="${choiceNumber}">`
         } else {
             choice.innerText = currentQuestion['choice' + choiceNumber];
         }
