@@ -435,6 +435,11 @@ progress::-webkit-progress-value {
     border: #0c4c6c solid 0.2rem;;
 }
 
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
 .form {
     padding: 0 2rem 2rem;
 }

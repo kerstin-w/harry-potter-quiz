@@ -13,18 +13,26 @@ if (lastScore >= 80) {
     endScore.innerText = `${lastScore} Points! 
     You are a true ${housePick}`;
 } else if (lastScore >= 50) {
-    endScore.innerText = `${lastScore} Points!
+    endScore.innerText = `${lastScore} Points! 
     You did well`;
 } else {
     endScore.innerText = `${lastScore} Points! 
     Maybe another house will suit you better`;
 };
 
+
 /**
  * Enable the save button
  * */
 username.addEventListener('keyup', () => {
     saveScore.disabled = !username.value;
+});
+
+/**
+ * Change tooltip for enabled button
+ */
+saveScore.addEventListener('mouseover', () => {
+    saveScore.setAttribute('title', 'Click to save!');
 });
 
 /**
