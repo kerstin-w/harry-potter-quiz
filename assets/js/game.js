@@ -135,6 +135,7 @@ choices.forEach(choice => {
         Created using information from FreeCodeCamp.*/
         setTimeout(() => {
             selectedChoice.classList.remove(classToApply);
+            selectedChoice.parentElement.classList.remove(classToApply);
             currentCorrectAnswerBox.classList.remove('correct');
             question.classList.remove('correct-text', 'incorrect-text');
             getNewQuestion();
