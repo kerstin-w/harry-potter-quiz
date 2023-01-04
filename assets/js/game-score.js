@@ -12,10 +12,18 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 highScoresList.innerHTML = highScores
 
 .map(score => {
-    return `<li class="high-score">${score.name} - ${score.score} Points <img class="house small flex-center" src="assets/images/${score.house}.png" alt="House Log">`
+    return `
+    <tr>
+    <td>${score.name}</td>
+    <td>${score.score}</td>
+    <td><img class="house small" src="assets/images/${score.house}.png" alt="House Logo"></td>
+    </tr>
+
+    `
 })
 .join("");
 
 function deleteStorage() {
     localStorage.clear();
   }
+

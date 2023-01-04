@@ -48,13 +48,18 @@
     <main id="main" class="flex-center">
         <!--High Score Section-->
         <section id="score-page" class="">
-            <div class="">
-                <div id="highScores">
-                    <h2 class="">High Scores</h1>
-                        <div class="">
-                            <ol id="highScoresList"></ol>
-                        </div>
-                </div>
+            <div class="flex-center">
+                <table id="highScores">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Score</th>
+                            <th>House</th>
+                        </tr>
+                    </thead>
+                    <tbody id="highScoresList">
+                    </tbody>
+                </table>
             </div>
             <button onclick="deleteStorage()">Clear</button>
         </section>

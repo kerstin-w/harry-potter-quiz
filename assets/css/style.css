@@ -319,8 +319,7 @@ Created using information from W3S*/
     max-height: 80%;
 }
 
-.choice {
-}
+.choice {}
 
 /*Score and Progress Bar*/
 progress {
@@ -391,7 +390,7 @@ progress::-webkit-progress-value {
 
 #final-score {
     margin-top: 1rem;
-    color: #dcb45c;  
+    color: #dcb45c;
     letter-spacing: 2.5px;
 }
 
@@ -406,18 +405,19 @@ progress::-webkit-progress-value {
     color: #dcb45c;
 }
 
-::placeholder { 
+::placeholder {
     color: #dcb45c;
-    opacity: .8; 
-  }
+    opacity: .8;
+}
 
 .btn {
     text-transform: uppercase;
     text-align: center;
-    text-decoration: none;  
+    text-decoration: none;
     border-radius: 10rem;
     padding: 0.8rem 1.7rem;
-    border: #ECECEB solid 0.2rem;;
+    border: #ECECEB solid 0.2rem;
+    ;
     background-color: #0c4c6c;
     color: #fff;
     text-shadow: 0px 15px 25px rgba(0, 0, 0, .15), 0px 5px 10px rgba(0, 0, 0, .05);
@@ -432,16 +432,22 @@ progress::-webkit-progress-value {
     font-weight: 600;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
-    border: #0c4c6c solid 0.2rem;;
+    border: #0c4c6c solid 0.2rem;
+    ;
 }
 
 .btn:disabled {
     opacity: 0.6;
     cursor: not-allowed;
-  }
+}
 
 .form {
     padding: 0 2rem 2rem;
+}
+
+/* High Score Table */
+.high-score >img{
+    margin-left: 1.5rem;
 }
 
 /* Footer */
