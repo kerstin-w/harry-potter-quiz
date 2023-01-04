@@ -50,13 +50,13 @@
         <div id="end" class="flex-column flex-center bg drop-shadow">
             <div class="box-score">
                 Your Score
-                <h3 id="final-score" class="drop-shadow"><i class="fa-solid fa-wand-sparkles"></i>0</h3>
+                <h2 id="final-score" class="drop-shadow">0</h3>
             </div>
             <form class="flex-center form">
                 <input class="username" type="text" name="username" id="username" placeholder="Enter your name"
                     required maxlength="15" />
-                <button type="submit" class="btn" id="save-score">
-                    <span><i class="fa-solid fa-floppy-disk"></i></span> Save your score
+                <button type="submit" class="btn" id="save-score" onclick="saveHighScore(event)" disabled>
+                    <span><i class="fa-solid fa-wand-sparkles"></i></span> Save your score
                 </button>
             </form>
         </div>
@@ -83,6 +83,7 @@
     <!-- Main JavaScript -->
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/game-end.js"></script>
 
 </body>
 
