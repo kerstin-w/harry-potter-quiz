@@ -370,6 +370,75 @@ progress::-webkit-progress-value {
     outline: .8rem solid red !important;
 }
 
+/* Game End*/
+
+.box-score {
+    color: #dcb45c;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #A6332E;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 3rem;
+    font-weight: 600;
+}
+
+.bg {
+    background-color: #ececeb80;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+}
+
+#final-score {
+    margin-top: 1rem;
+    color: #dcb45c;  
+    letter-spacing: 2.5px;
+}
+
+.username {
+    font-size: 1.5rem;
+    letter-spacing: 2.5px;
+    background: transparent;
+    width: 50%;
+    height: 2.5rem;
+    border: #fff solid 0.2rem;
+    border-radius: 0.4rem;
+    color: #dcb45c;
+}
+
+::placeholder { 
+    color: #dcb45c;
+    opacity: .8; 
+  }
+
+.btn {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;  
+    border-radius: 10rem;
+    padding: 0.8rem 1.7rem;
+    border: #ECECEB solid 0.2rem;;
+    background-color: #0c4c6c;
+    color: #fff;
+    text-shadow: 0px 15px 25px rgba(0, 0, 0, .15), 0px 5px 10px rgba(0, 0, 0, .05);
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    margin-left: 1rem;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #0c4c6c;
+    font-weight: 600;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    border: #0c4c6c solid 0.2rem;;
+}
+
+.form {
+    padding: 0 2rem 2rem;
+}
+
 /* Footer */
 #footer {
     width: auto;

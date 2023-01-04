@@ -45,16 +45,16 @@
 
 <body>
     <!-- Game Section -->
-    <main id="main" class="flex">
+    <main id="main" class="flex-center">
 
-        <div id="end" class="flex">
+        <div id="end" class="flex-column flex-center bg drop-shadow">
             <div class="box-score">
                 Your Score
-                <h3 id="final-score" class="">0</h3>
+                <h3 id="final-score" class="drop-shadow"><i class="fa-solid fa-wand-sparkles"></i>0</h3>
             </div>
-            <form class="flex">
-                <input class="" type="text" name="username" id="username" placeholder="username"
-                    required maxlength="12" />
+            <form class="flex-center form">
+                <input class="username" type="text" name="username" id="username" placeholder="Enter your name"
+                    required maxlength="15" />
                 <button type="submit" class="btn" id="save-score">
                     <span><i class="fa-solid fa-floppy-disk"></i></span> Save your score
                 </button>
