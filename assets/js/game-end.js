@@ -12,9 +12,13 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 if (lastScore >= 80) {
     endScore.innerText = `${lastScore} Points! 
     You are a true ${housePick}`;
+} else if (lastScore >= 50) {
+    endScore.innerText = `${lastScore} Points!
+    You did well`;
 } else {
-    endScore.innerText = `${lastScore} Points!`;
-}
+    endScore.innerText = `${lastScore} Points! 
+    Maybe another house will suit you better`;
+};
 
 /**
  * Enable the save button
