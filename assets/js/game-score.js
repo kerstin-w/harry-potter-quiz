@@ -15,3 +15,7 @@ highScoresList.innerHTML = highScores
     return `<li class="high-score">${score.name} - ${score.score} Points <img class="house small flex-center" src="assets/images/${score.house}.png" alt="House Log">`
 })
 .join("");
+
+function deleteStorage() {
+    localStorage.clear();
+  }
