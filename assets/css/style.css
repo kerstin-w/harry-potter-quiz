@@ -48,6 +48,10 @@ a {
     flex-direction: column;
 }
 
+.flex-start {
+    align-items: flex-start;
+}
+
 .center {
     text-align: center;
 }
@@ -166,8 +170,7 @@ Created using information from W3S*/
     width: 30vw;
     position: relative;
     font-size: 2rem;
-    align-items: center;
-    justify-content: center;
+    margin-right: 1.8rem;
 }
 
 .fade {
@@ -315,6 +318,8 @@ Created using information from W3S*/
     letter-spacing: 2.5px;
     text-transform: uppercase;
     font-weight: 600;
+    position: absolute;
+    top: 5rem;
 }
 
 .choice-text {
@@ -338,6 +343,11 @@ Created using information from W3S*/
 /*Score and Progress Bar*/
 #game {
     align-items: flex-start;
+    position: relative;
+    top: 22rem;
+}
+
+.question {
 }
 
 progress {

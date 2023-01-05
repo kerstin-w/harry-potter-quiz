@@ -107,7 +107,7 @@ choices.forEach(choice => {
         const corrrectAnswerReplyRandom = correctAnswerReply[correctAnswerReplyIndex];
 
         //Array for the inccorrect answer to the user
-        let wrongAnswerReply = ['Expelliarmus! We got you! Wrong Answer', 'Are you a muggle? Wrong Answer!', "Wrong Answer!"];
+        let wrongAnswerReply = ['Expelliarmus! We got you! Wrong Answer', 'Are you a muggle? Wrong Answer!', "Oh no! Wrong Answer!"];
         const wrongAnswerReplyIndex = Math.floor(Math.random() * wrongAnswerReply.length);
         const wrongAnswerReplyRandom = wrongAnswerReply[wrongAnswerReplyIndex];
 
