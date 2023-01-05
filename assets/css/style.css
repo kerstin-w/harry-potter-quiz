@@ -156,6 +156,11 @@ Created using information from W3S*/
     font-size: 36px;
     margin-left: 50px;
 }
+#mySidenav button{
+    margin: 0 auto .8rem;
+    display: block;
+    width: 200px;
+}
 
 .width-nav-open {
     width: 250px;
