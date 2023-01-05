@@ -387,10 +387,16 @@ progress::-webkit-progress-value {
 
 .correct-text {
     color: green !important;
+    -webkit-filter: drop-shadow(5px 5px 5px #222) !important;
+    filter: drop-shadow(5px 5px 5px #222) !important;
+    text-shadow: none !important;
 }
 
 .incorrect-text {
     color: red !important;
+    -webkit-filter: drop-shadow(5px 5px 5px #222) !important;
+    filter: drop-shadow(5px 5px 5px #222) !important;
+    text-shadow: none !important;
 }
 
 .correct {
