@@ -601,10 +601,10 @@ tr td:last-child {
 
 /* Footer */
 #footer {
-    width: auto;
+    width: 100%;
     text-align: center;
     padding: 3rem 0 2.5rem;
-    position: reltive;
+    position: absolute;
     bottom: 0;
 }
 
