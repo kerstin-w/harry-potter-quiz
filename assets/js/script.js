@@ -1,25 +1,33 @@
 'use strict';
 
 // Hamburger Menu
+
+// Declare const for DOM elements
+const sideNav = document.getElementById("mySidenav");
+const mainContent = document.getElementById("main");
+const hamburger = document.getElementById("hamburger");
+
 /**
  * Set width, margin for hamburger menu
  */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.getElementById("hamburger").style.visibility = "hidden";
-  document.getElementById("hamburger").style.marginLeft = "250px";
+  sideNav.classList.add('width-nav-open');
+  mainContent.classList.add('margin-nav-open');
+  hamburger.style.visibility = "hidden";
+  hamburger.classList.add('margin-nav-open');
 }
-
 
 /**
  * Reverse width, margin for hamburger menu
  */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.getElementById("hamburger").style.visibility = "visible";
-  document.getElementById("hamburger").style.marginLeft = "0";
+  sideNav.classList.add('width-nav-close');
+  mainContent.classList.add('margin-nav-close');
+  hamburger.style.visibility = "visible";
+  hamburger.classList.add('margin-nav-close');
+  sideNav.classList.remove('width-nav-open', 'width-nav-close');
+  mainContent.classList.remove('margin-nav-open', 'margin-nav-close');
+  hamburger.classList.remove('margin-nav-open', 'margin-nav-close')
 }
 
 //Game 
