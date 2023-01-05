@@ -441,7 +441,7 @@ progress::-webkit-progress-value {
 }
 
 .bg {
-    background-color: #ececeb80;
+    background-color: #ececeb30;
     border: 2px solid #fff;
     border-radius: 2rem;
 }
@@ -465,7 +465,7 @@ progress::-webkit-progress-value {
 .username,
 select,
 text {
-    color: #0c4c6c;
+    color: #fff !important;
     font-weight: bold;
     padding: .5rem;
 }
