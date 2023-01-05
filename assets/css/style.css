@@ -182,6 +182,9 @@ Created using information from W3S*/
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
 }
 
 .house-container {
@@ -387,16 +390,12 @@ progress::-webkit-progress-value {
 
 .correct-text {
     color: green !important;
-    -webkit-filter: drop-shadow(5px 5px 5px #222) !important;
-    filter: drop-shadow(5px 5px 5px #222) !important;
-    text-shadow: none !important;
+    text-shadow: 1px 1px 1px #000000a6 !important;
 }
 
 .incorrect-text {
     color: red !important;
-    -webkit-filter: drop-shadow(5px 5px 5px #222) !important;
-    filter: drop-shadow(5px 5px 5px #222) !important;
-    text-shadow: none !important;
+    text-shadow: 1px 1px 1px #000000a6 !important;
 }
 
 .correct {
