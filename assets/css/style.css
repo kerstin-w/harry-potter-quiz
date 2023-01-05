@@ -89,12 +89,12 @@ a {
 }
 
 .hamburger {
-    font-size: 2.5rem;
+    font-size: 2rem;
     cursor: pointer;
     border-radius: 10px;
     border: #fff solid 3px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 #main,
@@ -307,6 +307,16 @@ Created using information from W3S*/
 }
 
 /* Games Page */
+#question {
+    color: #dcb45c;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #A6332E;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 .choice-text {
     font-size: 1.8rem;
     text-align: center;
@@ -326,30 +336,37 @@ Created using information from W3S*/
 .choice {}
 
 /*Score and Progress Bar*/
+#game {
+    align-items: flex-start;
+}
+
 progress {
-    width: 30vw;
+    width: 20vw;
     height: 10px;
 }
 
 progress:after {
     content: "";
     display: block;
-    width: 30vw;
+    width: 20vw;
     height: 10px;
     margin-top: -11px;
     border: solid hsl(0, 0%, 90%);
     border-width: 1px 0;
+    border-radius: 4px;
     background-position: 0% 0%;
-    background-size: 40px 10px;
+    background-size: 40px 15px;
     background-repeat: repeat-x;
 }
 
 progress::-webkit-progress-bar {
     background-color: white;
+    border-radius: 4px;
 }
 
 progress::-webkit-progress-value {
-    background-color: #366447;
+    background-color: #a6332e;
+    border-radius: 4px;
     box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -376,14 +393,12 @@ progress::-webkit-progress-value {
 /* Game End*/
 
 .box-score {
-    color: #dcb45c;
     font-size: 2rem;
-    text-shadow: 2px 2px 2px #A6332E;
     font-weight: 700;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    padding: 3rem;
     font-weight: 600;
+    margin-top: .6rem;
 }
 
 .bg {
@@ -427,6 +442,7 @@ progress::-webkit-progress-value {
     font-weight: 600;
     letter-spacing: 2.5px;
     margin-left: 1rem;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -537,8 +553,13 @@ tr td:nth-child(2) {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
     border: #0c4c6c solid 0.2rem;
-    width: 7rem;
     margin: .8rem 0 .8rem;
+}
+
+.light:hover {
+    border: #ECECEB solid 0.2rem;
+    background-color: #0c4c6c;
+    color: #fff;
 }
 
 /* Footer */

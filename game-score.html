@@ -49,7 +49,7 @@
         <!--High Score Section-->
         <section id="score-page" class="">
             <div class="table-wrapper flex-center flex-column">
-                <table id="highScores">
+                <table id="highScores" class="drop-shadow">
                     <caption class="center">High Score</caption>
                     <thead>
                         <tr>
@@ -61,8 +61,8 @@
                     <tbody id="highScoresList">
                     </tbody>
                 </table>
-                <button class="btn light" onclick="deleteStorage()">Clear</button>
-                <button class="btn light"onclick="location.href='index.html';">Home</button>
+                <button class="btn light" onclick="deleteStorage()"><i class="fa-solid fa-trash-can"></i> Clear</button>
+                <button class="btn light"onclick="location.href='index.html';"><i class="fa-solid fa-hat-wizard"></i> Home</button>
             </div>
         </section>
     </main>
