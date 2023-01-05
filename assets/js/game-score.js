@@ -25,5 +25,6 @@ highScoresList.innerHTML = highScores
 
 function deleteStorage() {
     localStorage.clear();
+    return window.location.assign('./index.html');
   }
 
