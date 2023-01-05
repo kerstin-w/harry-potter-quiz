@@ -48,7 +48,7 @@
     <main id="main" class="flex-center">
         <!--High Score Section-->
         <section id="score-page" class="">
-            <div class="table-wrapper">
+            <div class="table-wrapper flex-center flex-column">
                 <table id="highScores">
                     <caption class="center">High Score</caption>
                     <thead>
@@ -61,8 +61,9 @@
                     <tbody id="highScoresList">
                     </tbody>
                 </table>
+                <button class="btn light" onclick="deleteStorage()">Clear</button>
+                <button class="btn light"onclick="location.href='index.html';">Home</button>
             </div>
-            <button onclick="deleteStorage()">Clear</button>
         </section>
     </main>
 
