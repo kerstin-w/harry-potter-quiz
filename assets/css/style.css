@@ -11,8 +11,8 @@
 }
 
 body {
-    background: linear-gradient(to right, #33374B, #0c4c6c);
-    overflow-x: hidden;
+    /*background: linear-gradient(to right, #33374B, #0c4c6c);*/
+    background-image: linear-gradient(to right top, #33374b, #36415b, #374c6c, #34577d, #2c638e, #256591, #1c6893, #0d6a96, #0d628b, #0d5b81, #0c5376, #0c4c6c);
     color: #fff;
     min-height: 100%;
 }
@@ -85,8 +85,6 @@ a {
 }
 
 #hero {
-    background: linear-gradient(to right, #33374B, #0c4c6c);
-    width: 100%;
     padding: 50px;
     transition: all 0.5s;
     align-items: center;
