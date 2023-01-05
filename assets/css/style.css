@@ -110,10 +110,10 @@ a {
 }
 
 .wrapper {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: flex-start;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 
@@ -523,6 +523,14 @@ text {
     border: 2px solid #fff;
     border-radius: 2rem;
     width: 60vw;
+    box-shadow:
+        6.7px 9.5px 32.6px rgba(0, 0, 0, 0.036),
+        8.4px 11.9px 45px rgba(0, 0, 0, 0.059),
+        9px 12.8px 51.9px rgba(0, 0, 0, 0.078),
+        9.9px 14px 56.9px rgba(0, 0, 0, 0.095),
+        11.4px 16.1px 62.1px rgba(0, 0, 0, 0.109),
+        13.8px 19.5px 70.3px rgba(0, 0, 0, 0.121),
+        17px 24px 95px rgba(0, 0, 0, 0.13);
 }
 
 table {
