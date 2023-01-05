@@ -23,89 +23,91 @@
 
 
 <body>
-    <header>
-        <div id="hero" class="flex">
-            <!--HAMBURGER MENU -->
-            <!--Created using information from W3S-->
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Home</a>
-                <a href="game-score.html">High Scores</a>
-            </div>
-            <div id="header" class="game-header flex">
-                <span id="hamburger" onclick="openNav()">
-                    <i class="fa fa-bars hamburger"></i>
-                </span>
-                <div class="header-logo flex" id="header-logo">
-                    <a href="index.html">
-                        <img class="logo drop-shadow" src="assets/images/logo.png" alt="Harry Potter Logo">
-                        <h1 class="shadow">Harry Potter Quiz</h1>
-                    </a>
+    <div class="wrapper">
+        <header>
+            <div id="hero" class="flex">
+                <!--HAMBURGER MENU -->
+                <!--Created using information from W3S-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="game-score.html">High Scores</a>
+                </div>
+                <div id="header" class="game-header flex">
+                    <span id="hamburger" onclick="openNav()">
+                        <i class="fa fa-bars hamburger"></i>
+                    </span>
+                    <div class="header-logo flex" id="header-logo">
+                        <a href="index.html">
+                            <img class="logo drop-shadow" src="assets/images/logo.png" alt="Harry Potter Logo">
+                            <h1 class="shadow">Harry Potter Quiz</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="house small flex-center" id="house-logo">
                 </div>
             </div>
-            <div class="house small flex-center" id="house-logo">
-            </div>
-        </div>
-    </header>
-    <!-- Game Section -->
-    <main id="main" class="flex">
-        <div class="game-container flex">
-            <div class="flex flex-start flex-column left-container question">
-                <h2 id="question" class="drop-shadow">Question</h2>
+        </header>
+        <!-- Game Section -->
+        <main id="main" class="flex">
+            <div class="game-container flex">
+                <div class="flex flex-start flex-column left-container question">
+                    <h2 id="question" class="drop-shadow">Question</h2>
 
-                <!-- Score -->
-                <div id="game" class="flex left-container flex-column">
-                    <div id="scoreboard">
-                        <div>
-                            <div id="progress-text" class="box-score drop-shadow">
-                                Question
+                    <!-- Score -->
+                    <div id="game" class="flex left-container flex-column">
+                        <div id="scoreboard">
+                            <div>
+                                <div id="progress-text" class="box-score drop-shadow">
+                                    Question
+                                </div>
+                                <progress id="progress-bar" max="10" value="0"></progress>
                             </div>
-                            <progress id="progress-bar" max="10" value="0"></progress>
+                            <div class="box-score">
+                                <p class="drop-shadow">
+                                    Score <span id="score" class="drop-shadow">0</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="box-score">
-                            <p class="drop-shadow">
-                                Score <span id="score" class="drop-shadow">0</span>
-                            </p>
+                    </div>
+                </div>
+
+                <div class="house-container flex">
+                    <div class="col-1 flex">
+                        <div class="house red flex choice-text" data-choice="1">
+                            <p class="choice drop-shadow"></p>
+                        </div>
+                        <div class="house yellow flex choice-text" data-choice="3">
+                            <p class="choice drop-shadow"></p>
+                        </div>
+                    </div>
+                    <div class="col-2 flex">
+                        <div class="house blue flex choice-text" data-choice="2">
+                            <p class="choice drop-shadow"></p>
+                        </div>
+                        <div class="house green flex choice-text" data-choice="4">
+                            <p class="choice drop-shadow"></p>
                         </div>
                     </div>
                 </div>
-            </div>
+        </main>
 
-            <div class="house-container flex">
-                <div class="col-1 flex">
-                    <div class="house red flex choice-text" data-choice="1">
-                        <p class="choice drop-shadow"></p>
-                    </div>
-                    <div class="house yellow flex choice-text" data-choice="3">
-                        <p class="choice drop-shadow"></p>
-                    </div>
-                </div>
-                <div class="col-2 flex">
-                    <div class="house blue flex choice-text" data-choice="2">
-                        <p class="choice drop-shadow"></p>
-                    </div>
-                    <div class="house green flex choice-text" data-choice="4">
-                        <p class="choice drop-shadow"></p>
-                    </div>
-                </div>
-            </div>
-    </main>
-
-    <!--Footer-->
-    <footer id="footer" class="flex-center flex-column">
-        <ul class="social-networks flex">
-            <li>
-                <a href="https://www.linkedin.com/in/kerstin-weibeler-9532688b/" target="_blank" rel="noopener"
-                    aria-label="Visit my LinkedIn page (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-                <a href="https://github.com/kerstin-w" target="_blank" rel="noopener"
-                    aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
-            </li>
-        </ul>
-        <p>Designed by Kerstin Weibeler 2023</p>
-    </footer>
-
+        <!--Footer-->
+        <footer id="footer" class="flex-center flex-column">
+            <ul class="social-networks flex">
+                <li>
+                    <a href="https://www.linkedin.com/in/kerstin-weibeler-9532688b/" target="_blank" rel="noopener"
+                        aria-label="Visit my LinkedIn page (opens in a new tab)"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/kerstin-w" target="_blank" rel="noopener"
+                        aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+            <p>Designed by Kerstin Weibeler 2023</p>
+        </footer>
+    </div>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/db4afc7d29.js" crossorigin="anonymous"></script>
 

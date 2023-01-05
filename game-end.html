@@ -23,62 +23,66 @@
 
 
 <body>
-    <header>
-        <div id="hero" class="flex">
-            <!--HAMBURGER MENU -->
-            <!--Created using information from W3S-->
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Home</a>
-                <a href="game-score.html">High Scores</a>
-            </div>
-            <div id="header" class="game-header flex">
-                <span id="hamburger" onclick="openNav()">
-                    <i class="fa fa-bars hamburger"></i>
-                </span>
-                <div class="header-logo flex" id="header-logo">
-                    <a href="index.html">
-                        <img class="logo drop-shadow" src="assets/images/logo.png" alt="Harry Potter Logo">
-                        <h1 class="shadow">Harry Potter Quiz</h1>
-                    </a>
+    <div class="wrapper">
+        <header>
+            <div id="hero" class="flex">
+                <!--HAMBURGER MENU -->
+                <!--Created using information from W3S-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="game-score.html">High Scores</a>
+                </div>
+                <div id="header" class="game-header flex">
+                    <span id="hamburger" onclick="openNav()">
+                        <i class="fa fa-bars hamburger"></i>
+                    </span>
+                    <div class="header-logo flex" id="header-logo">
+                        <a href="index.html">
+                            <img class="logo drop-shadow" src="assets/images/logo.png" alt="Harry Potter Logo">
+                            <h1 class="shadow">Harry Potter Quiz</h1>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- Game Section -->
-    <main id="main" class="flex-center">
-        <!--Save Score Section-->
-        <div id="end" class="flex-column flex-center bg drop-shadow">
-            <div class="box-score">
-                <h2 class="score-heading">Your Score:</h2>
-                <h3 id="end-score" class="drop-shadow">0</h3>
+        </header>
+        <!-- Game Section -->
+        <main id="main" class="flex-center">
+            <!--Save Score Section-->
+            <div id="end" class="flex-column flex-center bg drop-shadow">
+                <div class="box-score">
+                    <h2 class="score-heading">Your Score:</h2>
+                    <h3 id="end-score" class="drop-shadow">0</h3>
+                </div>
+                <form class="flex-center form">
+                    <input class="username" type="text" name="username" id="username" placeholder="Enter your name"
+                        required minlength="2" maxlength="15" />
+                    <button type="submit" class="btn" id="save-score" onclick="saveHighScore(event)" disabled
+                        title="Enter your name to save your score!">
+                        <span><i class="fa-solid fa-wand-sparkles"></i> Save your score</span>
+                    </button>
+                </form>
             </div>
-            <form class="flex-center form">
-                <input class="username" type="text" name="username" id="username" placeholder="Enter your name" required minlength="2" maxlength="15" />
-                <button type="submit" class="btn" id="save-score" onclick="saveHighScore(event)" disabled title="Enter your name to save your score!">
-                    <span><i class="fa-solid fa-wand-sparkles"></i> Save your score</span>
-                </button>
-            </form>
-        </div>
-    </main>
+        </main>
 
-    <!--Footer-->
-    <footer id="footer" class="flex-center flex-column">
-        
-        <ul class="social-networks flex">
-            <li>
-                <a href="https://www.linkedin.com/in/kerstin-weibeler-9532688b/" target="_blank" rel="noopener"
-                    aria-label="Visit my LinkedIn page (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-                <a href="https://github.com/kerstin-w" target="_blank" rel="noopener"
-                    aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
-            </li>
-        </ul>
-        <p>Designed by Kerstin Weibeler 2023</p>
-    
-    </footer>
+        <!--Footer-->
+        <footer id="footer" class="flex-center flex-column">
 
+            <ul class="social-networks flex">
+                <li>
+                    <a href="https://www.linkedin.com/in/kerstin-weibeler-9532688b/" target="_blank" rel="noopener"
+                        aria-label="Visit my LinkedIn page (opens in a new tab)"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/kerstin-w" target="_blank" rel="noopener"
+                        aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+            <p>Designed by Kerstin Weibeler 2023</p>
+
+        </footer>
+    </div>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/db4afc7d29.js" crossorigin="anonymous"></script>
 

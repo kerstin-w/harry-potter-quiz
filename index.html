@@ -22,82 +22,85 @@
 </head>
 
 <body>
-    <header>
-        <div id="hero" class="flex">
-            <!--HAMBURGER MENU -->
-            <!--Created using information from W3S-->
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Home</a>
-                <a href="game-score.html">High Scores</a>
-            </div>
-            <div id="header" class="game-header flex">
-                <span id="hamburger" onclick="openNav()">
-                    <i class="fa fa-bars hamburger"></i>
-                </span>
-                <div class="header-logo flex" id="header-logo">
-                    <a href="index.html">
-                        <img class="logo drop-shadow" src="assets/images/logo.png" alt="Harry Potter Logo">
-                        <h1 class="shadow">Harry Potter Quiz</h1>
-                    </a>
+    <div class="wrapper">
+        <header>
+            <div id="hero" class="flex">
+                <!--HAMBURGER MENU -->
+                <!--Created using information from W3S-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="game-score.html">High Scores</a>
                 </div>
-            </div>
-        </div>
-    </header>
-    <!-- Game Section -->
-    <main id="main" class="flex">
-        <div class="game-container flex">
-            <div class="flex-center left-container">
-                <p class="fade drop-shadow">
-                    <span class="fade-text">Are</span>
-                    <span class="fade-text">you</span>
-                    <span class="fade-text">ready</span>
-                    <span class="fade-text">for</span>
-                    <span class="fade-text">Hogwards?</span>
-                    <br>
-                    <span class="fade-text">Pick</span>
-                    <span class="fade-text">your</span>
-                    <span class="fade-text">house:</span>
-                </p>
-            </div>
-            <div class="house-container flex">
-                <div class="col-1 flex">
-                    <div class="house red flex" data-house="gryffindor" onclick="newHouse(this)">
-                        <a href="game.html" class="house-link"><img src="assets/images/gryffindor.png"
-                                alt="Logo House Gryffindor"></a>
-                    </div>
-                    <div class="house yellow flex" data-house="huffelpuff" onclick="newHouse(this)">
-                        <a href="game.html" class="house-link"><img src="assets/images/huffelpuff.png"
-                                alt="Logo House Huffelpuff"></a>
-                    </div>
-                </div>
-                <div class="col-2 flex">
-                    <div class="house blue flex" data-house="ravenclaw" onclick="newHouse(this)">
-                        <a href="game.html" class="house-link"><img src="assets/images/ravenclaw.png"
-                                alt="Logo House Ravenclaw"></a>
-                    </div>
-                    <div class="house green flex" data-house="slytherin" onclick="newHouse(this)">
-                        <a href="game.html" class="house-link"><img src="assets/images/slytherin.png"
-                                alt="Logo House Slytherin"></a>
+                <div id="header" class="game-header flex">
+                    <span id="hamburger" onclick="openNav()">
+                        <i class="fa fa-bars hamburger"></i>
+                    </span>
+                    <div class="header-logo flex" id="header-logo">
+                        <a href="index.html">
+                            <img class="logo drop-shadow" src="assets/images/logo.png" alt="Harry Potter Logo">
+                            <h1 class="shadow">Harry Potter Quiz</h1>
+                        </a>
                     </div>
                 </div>
             </div>
-    </main>
+        </header>
+        <!-- Game Section -->
+        <main id="main" class="flex">
+            <div class="game-container flex">
+                <div class="flex-center left-container">
+                    <p class="fade drop-shadow">
+                        <span class="fade-text">Are</span>
+                        <span class="fade-text">you</span>
+                        <span class="fade-text">ready</span>
+                        <span class="fade-text">for</span>
+                        <span class="fade-text">Hogwards?</span>
+                        <br>
+                        <span class="fade-text">Pick</span>
+                        <span class="fade-text">your</span>
+                        <span class="fade-text">house:</span>
+                    </p>
+                </div>
+                <div class="house-container flex">
+                    <div class="col-1 flex">
+                        <div class="house red flex" data-house="gryffindor" onclick="newHouse(this)">
+                            <a href="game.html" class="house-link"><img src="assets/images/gryffindor.png"
+                                    alt="Logo House Gryffindor"></a>
+                        </div>
+                        <div class="house yellow flex" data-house="huffelpuff" onclick="newHouse(this)">
+                            <a href="game.html" class="house-link"><img src="assets/images/huffelpuff.png"
+                                    alt="Logo House Huffelpuff"></a>
+                        </div>
+                    </div>
+                    <div class="col-2 flex">
+                        <div class="house blue flex" data-house="ravenclaw" onclick="newHouse(this)">
+                            <a href="game.html" class="house-link"><img src="assets/images/ravenclaw.png"
+                                    alt="Logo House Ravenclaw"></a>
+                        </div>
+                        <div class="house green flex" data-house="slytherin" onclick="newHouse(this)">
+                            <a href="game.html" class="house-link"><img src="assets/images/slytherin.png"
+                                    alt="Logo House Slytherin"></a>
+                        </div>
+                    </div>
+                </div>
+        </main>
 
-    <!--Footer-->
-    <footer id="footer" class="flex-center flex-column">
-        <ul class="social-networks flex">
-            <li>
-                <a href="https://www.linkedin.com/in/kerstin-weibeler-9532688b/" target="_blank" rel="noopener"
-                    aria-label="Visit my LinkedIn page (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-                <a href="https://github.com/kerstin-w" target="_blank" rel="noopener"
-                    aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
-            </li>
-        </ul>
-        <p>Designed by Kerstin Weibeler 2023</p>
-    </footer>
+        <!--Footer-->
+        <footer id="footer" class="flex-center flex-column">
+            <ul class="social-networks flex">
+                <li>
+                    <a href="https://www.linkedin.com/in/kerstin-weibeler-9532688b/" target="_blank" rel="noopener"
+                        aria-label="Visit my LinkedIn page (opens in a new tab)"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/kerstin-w" target="_blank" rel="noopener"
+                        aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+            <p>Designed by Kerstin Weibeler 2023</p>
+        </footer>
+    </div>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/db4afc7d29.js" crossorigin="anonymous"></script>

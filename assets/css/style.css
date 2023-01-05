@@ -109,7 +109,13 @@ a {
 
 #main {
     padding: 0 5rem 0 5rem;
-    
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 
@@ -606,6 +612,7 @@ tr td:last-child {
     width: 100%;
     text-align: center;
     padding: 3rem 0 2.5rem;
+    margin-top: auto;
 }
 
 .social-networks {
