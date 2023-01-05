@@ -409,6 +409,23 @@ progress::-webkit-progress-value {
     text-transform: uppercase;
     font-weight: 600;
     margin-top: .6rem;
+    padding: 2rem;
+}
+
+.score-heading {
+    text-align: center;
+    text-decoration: underline overline;
+    text-underline-offset: 15px;    
+    font-size: 2.2rem;
+    padding-top: 2rem;
+    font-weight: bold;
+    color: #dcb45c;
+    text-shadow: 2px 2px 2px #a6332e;
+}
+
+#end-score {
+    margin: 2.8rem .6rem 2rem;
+    text-align: center;
 }
 
 .bg {
@@ -431,11 +448,16 @@ progress::-webkit-progress-value {
     height: 2.5rem;
     border: #fff solid 0.2rem;
     border-radius: 0.4rem;
-    color: #dcb45c;
+}
+
+.username, select, text {
+    color: #0c4c6c;
+    font-weight: bold;
+    padding: .5rem;
 }
 
 ::placeholder {
-    color: #dcb45c;
+    color: #0c4c6c;
     opacity: .8;
 }
 
@@ -481,15 +503,6 @@ progress::-webkit-progress-value {
 
 .high-score>img {
     margin-left: 1.5rem;
-}
-
-caption {
-    font-size: 2.2rem;
-    padding-top: 2rem;
-    font-weight: bold;
-    text-decoration: underline overline;
-    text-underline-offset: 15px;
-    text-overline-offset: 15px;
 }
 
 .table-wrapper {
