@@ -421,7 +421,7 @@ progress::-webkit-progress-value {
 .score-heading {
     text-align: center;
     text-decoration: underline overline;
-    text-underline-offset: 15px;    
+    text-underline-offset: 15px;
     font-size: 2.2rem;
     padding-top: 2rem;
     font-weight: bold;
@@ -456,7 +456,9 @@ progress::-webkit-progress-value {
     border-radius: 0.4rem;
 }
 
-.username, select, text {
+.username,
+select,
+text {
     color: #0c4c6c;
     font-weight: bold;
     padding: .5rem;
@@ -576,6 +578,7 @@ tr td:last-child {
 tr td:nth-child(2) {
     text-align: center;
 }
+
 tr td:last-child {
     text-align: center;
 }
@@ -601,6 +604,8 @@ tr td:last-child {
     width: auto;
     text-align: center;
     padding: 3rem 0 2.5rem;
+    position: reltive;
+    bottom: 0;
 }
 
 .social-networks {
