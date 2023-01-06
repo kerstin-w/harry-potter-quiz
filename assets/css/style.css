@@ -785,6 +785,21 @@ tr td:last-child {
     .house-link img {
         padding: .5rem;
     }
+
+    #house-logo {
+        width: 60px;
+        height: 60px;
+        margin: 1.5rem .5rem 2rem;
+    }
+
+    progress {
+        width: 40vw;
+        height: 10px;
+    }
+
+    progress:after {
+        width: 40vw;
+    }
 }
 
 /*Tablets*/
@@ -818,6 +833,10 @@ tr td:last-child {
         padding: 0 1rem 0 1rem;
     }
 
+    #game {
+        align-items: center;
+    }
+
     .game-container {
         flex-wrap: wrap;
     }
@@ -847,6 +866,10 @@ tr td:last-child {
     .fade {
         margin: 1rem 0 1rem;
     }
+
+    .wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
 }
 
 /*Laptops*/
@@ -859,11 +882,36 @@ tr td:last-child {
         max-width: 100%;
         max-height: 100%;
     }
+
+    #house-logo {
+        position: absolute;
+        right: 0;
+    }
+
+    #question {
+        top: 0;
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    #game {
+        top: 0;
+    }
+
+    .choice-text {
+        font-size: 1.2rem;
+    }
 }
 
-@media screen and (max-width: 1188px) and (min-width :505px) {
+@media screen and (max-width: 1188px) and (min-width: 505px) {
     .house {
         width: 170px;
         height: 170px;
+    }
+
+    #house-logo {
+        width: 100px;
+        height: 100px;
+        margin: 1.5rem 1.5rem 2rem;
     }
 }
