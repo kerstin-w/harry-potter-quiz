@@ -15,7 +15,6 @@ body {
     background-image: linear-gradient(to right top, #33374b, #36415b, #374c6c, #34577d, #2c638e, #256591, #1c6893, #0d6a96, #0d628b, #0d5b81, #0c5376, #0c4c6c);
     color: #fff;
     min-height: 100%;
-    overflow-x: hidden;
 }
 
 h1,
@@ -176,6 +175,7 @@ a {
 
 #main {
     padding: 0 5rem 0 5rem;
+    width: 100%;
 }
 
 .wrapper {
@@ -628,7 +628,6 @@ text {
 .table-wrapper {
     border: 2px solid #fff;
     border-radius: 2rem;
-    width: 60vw;
     box-shadow:
         6.7px 9.5px 32.6px rgba(0, 0, 0, 0.036),
         8.4px 11.9px 45px rgba(0, 0, 0, 0.059),
@@ -869,6 +868,21 @@ tr td:last-child {
 
     .wrap-reverse {
         flex-wrap: wrap-reverse;
+    }
+
+    .form {
+        flex-wrap: wrap;
+    }
+
+    .username  {
+        width: auto;
+    }
+
+    .btn {
+        margin: .8rem 0 0 0;
+    }
+    .light {
+        margin: 0.8rem 0 0.8rem;
     }
 }
 
