@@ -190,12 +190,12 @@ const questionsArray = {
             correctAnswer: 2
         },
         {
-            question: "What's the name of this Ravenclaw professor?",
-            choice1: 'Albus Dumbledore',
-            choice2: 'Professor McGonagall',
-            choice3: 'Filius Flitwick',
-            choice4: 'Lord Voldemort',
-            correctAnswer: 3
+            question: "What's the name of the ghost who roams the Ravenclaw common room?",
+            choice1: 'The Grey Lady',
+            choice2: 'The Fat Friar',
+            choice3: 'Nearly Headless Nick',
+            choice4: 'Casper',
+            correctAnswer: 1
         },
         {
             question: 'Which member of Gryffindor was almost placed in Ravenclaw?',
@@ -222,7 +222,7 @@ const questionsArray = {
             correctAnswer: 2
         },
         {
-            question: "What's the name of this Hufflepuff professor who predicted the birth of the Chosen One, Harry Potter?",
+            question: "What's the name of the Ravenclaw professor who predicted the birth of the Chosen One, Harry Potter?",
             choice1: 'Sybill Trelawney',
             choice2: 'Ignatia Wildsmith',
             choice3: 'Millicent Bagnold',
