@@ -30,12 +30,12 @@ h3 {
 
 h1 {
     font-family: Harry Potter, sans-serif;
-  color: #ffc107;
-  background-image: -webkit-radial-gradient(circle, #ffc107 19%,#e1f6e6 76%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+    color: #ffc107;
+    background-image: -webkit-radial-gradient(circle, #ffc107 19%, #e1f6e6 76%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -83,58 +83,59 @@ a {
 }
 
 :root {
-	--gradient-shadow: linear-gradient(
-		45deg,
-		#A6332E,
-		#3C4E91,
-		#366447,
-		#EFBC2F,
-		#A6332E,
-		#3C4E91,
-		#366447,
-		#EFBC2F
-	);
+    --gradient-shadow: linear-gradient(45deg,
+            #A6332E,
+            #3C4E91,
+            #366447,
+            #EFBC2F,
+            #A6332E,
+            #3C4E91,
+            #366447,
+            #EFBC2F);
 }
 
 .fancy-shadow {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     text-align: center;
     background-image: linear-gradient(to left bottom, #0c4c6c, #0d567a, #0d6087, #0d6a96, #0d74a4);
     border-radius: 8px;
 
 }
+
 .fancy-shadow:before,
 .fancy-shadow:after {
-	content: "";
-	position: absolute;
-	top: -2px;
-	left: -2px;
-	background: var(--gradient-shadow);
-	background-size: 400%;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
-	z-index: -1;
-	animation: animate 20s linear infinite;
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: var(--gradient-shadow);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
     border-radius: 8px;
 }
 
 .fancy-shadow:after {
-	filter: blur(20px);
+    filter: blur(20px);
 }
 
 @keyframes animate {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 300% 0;
-	}
-	100% {
-		background-position: 0 0;
-	}
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
 .header-logo a {
@@ -165,6 +166,7 @@ a {
     border: #fff solid 3px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     padding: .5rem;
+    position: absolute;
 }
 
 #main,
@@ -222,7 +224,8 @@ Created using information from W3S*/
     font-size: 36px;
     margin-left: 50px;
 }
-#mySidenav button{
+
+#mySidenav button {
     margin: 0 auto .8rem;
     display: block;
     width: 200px;
@@ -285,7 +288,6 @@ Created using information from W3S*/
 .house-container {
     margin: 0 auto;
     right: 0;
-    width: 70vw;
     position: relative;
 }
 
@@ -734,39 +736,63 @@ tr td:last-child {
 /* Media Queries */
 
 /*Mobile */
-@media screen and (max-width: 425px) {}
-
 @media screen and (max-width: 450px) {
     html {
-        font-size: 50%;
+        font-size: 70%;
     }
 
     .width-nav-open {
         width: 100vw;
     }
+
     .margin-nav-open {
         margin-left: 100%;
     }
+
     .width-nav-close {
         width: 0;
     }
-    
+
     .margin-nav-close {
         margin-left: 0;
     }
-    
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    .left-container {
+        margin-top: 1rem;
+    }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
 
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .house {
+        width: 100px;
+        height: 100px;
+    }
+
+    .house-link img {
+        padding: .5rem;
+    }
 }
 
 /*Tablets*/
-
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 1.5rem;
     }
+
     .header-logo {
         padding: 1rem;
     }
@@ -775,7 +801,7 @@ tr td:last-child {
         display: flex;
         justify-content: space-around;
         flex-direction: row-reverse;
-        align-items: center; 
+        align-items: center;
     }
 
     .logo {
@@ -808,11 +834,6 @@ tr td:last-child {
         width: 100%;
     }
 
-    .house {
-        width: 100px;
-        height: 100px;
-    }
-    
     .house-container {
         justify-content: center;
     }
@@ -822,26 +843,27 @@ tr td:last-child {
         max-width: 100%;
         max-height: 100%;
     }
-}
 
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
+    .fade {
+        margin: 1rem 0 1rem;
     }
 }
 
 /*Laptops*/
-
-@media screen and (max-width: 950px) {
-    #about {
-        flex-direction: column;
+@media screen and (max-width: 1188px) {
+    .house-container {
+        width: fit-content;
     }
 
-    .header-logo {
-        width: 65vw;
+    .house-link {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width: 1188px) and (min-width :505px) {
+    .house {
+        width: 170px;
+        height: 170px;
     }
 }
