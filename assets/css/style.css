@@ -34,6 +34,7 @@ h1 {
   background-image: -webkit-radial-gradient(circle, #ffc107 19%,#e1f6e6 76%);
   background-clip: text;
   -webkit-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 
 }
@@ -309,7 +310,7 @@ Created using information from W3S*/
 }
 
 .house:hover {
-    outline: .8rem solid #cec8aa;
+    outline: .8rem solid #fff;
     transform: scale(1.05);
 }
 
