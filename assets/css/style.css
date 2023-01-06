@@ -30,6 +30,13 @@ h3 {
 
 h1 {
     font-family: Harry Potter, sans-serif;
+  color: #ffc107;
+  background-image: -webkit-radial-gradient(circle, #ffc107 19%,#e1f6e6 76%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+
 }
 
 a {
@@ -69,6 +76,65 @@ a {
 
 .header-logo {
     margin: 0 auto;
+    width: 50vw;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+:root {
+	--gradient-shadow: linear-gradient(
+		45deg,
+		#A6332E,
+		#3C4E91,
+		#366447,
+		#EFBC2F,
+		#A6332E,
+		#3C4E91,
+		#366447,
+		#EFBC2F
+	);
+}
+
+.fancy-shadow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+    text-align: center;
+    background-image: linear-gradient(to left bottom, #0c4c6c, #0d567a, #0d6087, #0d6a96, #0d74a4);
+    border-radius: 8px;
+
+}
+.fancy-shadow:before,
+.fancy-shadow:after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: var(--gradient-shadow);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+    border-radius: 8px;
+}
+
+.fancy-shadow:after {
+	filter: blur(20px);
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
 }
 
 .header-logo a {
@@ -670,6 +736,10 @@ tr td:last-child {
 @media screen and (max-width: 425px) {}
 
 @media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
     .width-nav-open {
         width: 100vw;
     }
@@ -687,9 +757,7 @@ tr td:last-child {
 }
 
 @media screen and (max-width: 375px) {
-    html {
-        font-size: 50%;
-    }
+
 }
 
 /*Tablets*/
@@ -699,8 +767,7 @@ tr td:last-child {
         font-size: 1.5rem;
     }
     .header-logo {
-        text-align: center;
-        padding: 0 1rem 0;
+        padding: 1rem;
     }
 
     .header-logo a {
@@ -716,16 +783,6 @@ tr td:last-child {
     }
 
     #hero {
-        border: 2px solid #fff;
-        border-radius: 4px;
-        box-shadow:
-        6.7px 9.5px 32.6px rgba(0, 0, 0, 0.036),
-        8.4px 11.9px 45px rgba(0, 0, 0, 0.059),
-        9px 12.8px 51.9px rgba(0, 0, 0, 0.078),
-        9.9px 14px 56.9px rgba(0, 0, 0, 0.095),
-        11.4px 16.1px 62.1px rgba(0, 0, 0, 0.109),
-        13.8px 19.5px 70.3px rgba(0, 0, 0, 0.121),
-        17px 24px 95px rgba(0, 0, 0, 0.13);
         padding: 1rem;
         margin: .5rem .5rem 2rem;
     }
@@ -781,5 +838,9 @@ tr td:last-child {
 @media screen and (max-width: 950px) {
     #about {
         flex-direction: column;
+    }
+
+    .header-logo {
+        width: 65vw;
     }
 }
