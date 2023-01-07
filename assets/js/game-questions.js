@@ -13,10 +13,10 @@ const questionsArray = {
         },
         {
             question: 'Which animal belongs to the house of Gryffindor?',
-            choice1: 'assets/images/game-questions/animal-2.webp',
-            choice2: 'assets/images/game-questions/animal-3.webp',
-            choice3: 'assets/images/game-questions/animal-4.webp',
-            choice4: 'assets/images/game-questions/animal-1.webp',
+            choice1: 'assets/images/game-questions/animal-2.png',
+            choice2: 'assets/images/game-questions/animal-3.png',
+            choice3: 'assets/images/game-questions/animal-4.png',
+            choice4: 'assets/images/game-questions/animal-1.png',
             correctAnswer: 4
         },
         {
@@ -94,10 +94,10 @@ const questionsArray = {
         },
         {
             question: 'Which animal belongs to the house of Huffelpuff?',
-            choice1: 'assets/images/game-questions/animal-2.webp',
-            choice2: 'assets/images/game-questions/animal-3.webp',
-            choice3: 'assets/images/game-questions/animal-4.webp',
-            choice4: 'assets/images/game-questions/animal-1.webp',
+            choice1: 'assets/images/game-questions/animal-2.png',
+            choice2: 'assets/images/game-questions/animal-3.png',
+            choice3: 'assets/images/game-questions/animal-4.png',
+            choice4: 'assets/images/game-questions/animal-1.png',
             correctAnswer: 1
         },
         {
@@ -167,10 +167,10 @@ const questionsArray = {
     ],
     'ravenclaw': [{
             question: 'Which animal belongs to the house of Ravenclaw?',
-            choice1: 'assets/images/game-questions/animal-2.webp',
-            choice2: 'assets/images/game-questions/animal-3.webp',
-            choice3: 'assets/images/game-questions/animal-4.webp',
-            choice4: 'assets/images/game-questions/animal-1.webp',
+            choice1: 'assets/images/game-questions/animal-2.png',
+            choice2: 'assets/images/game-questions/animal-3.png',
+            choice3: 'assets/images/game-questions/animal-4.png',
+            choice4: 'assets/images/game-questions/animal-1.png',
             correctAnswer: 2
         },
         {
@@ -296,10 +296,10 @@ const questionsArray = {
     },
     {
         question: 'Which animal belongs to the house of Stlytherin?',
-        choice1: 'assets/images/game-questions/animal-2.webp',
-        choice2: 'assets/images/game-questions/animal-3.webp',
-        choice3: 'assets/images/game-questions/animal-4.webp',
-        choice4: 'assets/images/game-questions/animal-1.webp',
+        choice1: 'assets/images/game-questions/animal-2.png',
+        choice2: 'assets/images/game-questions/animal-3.png',
+        choice3: 'assets/images/game-questions/animal-4.png',
+        choice4: 'assets/images/game-questions/animal-1.png',
         correctAnswer: 3
     },
     {
