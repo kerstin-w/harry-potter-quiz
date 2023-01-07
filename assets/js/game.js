@@ -6,6 +6,10 @@ const progressText = document.getElementById('progress-text');
 const scoreText = document.getElementById('score');
 const housePick = localStorage.getItem("housePick");
 const progressBar = document.getElementById('progress-bar');
+const myAudio = document.getElementById("audio");
+const soundIcon = document.getElementById("soundIcon");
+const audioOffIcon = document.getElementById("sound-off");
+const audioOnIcon = document.getElementById("sound-on");
 
 // Const for points for each question and maximum questions
 const pointsCorrectAnswer = 10;
@@ -66,7 +70,7 @@ function getNewQuestion() {
     //Update answer
     choices.forEach(choice => {
         const choiceNumber = choice.dataset.choice;
-        const imageChoice = currentQuestion['choice' + choiceNumber]
+        const imageChoice = currentQuestion['choice' + choiceNumber];
 
         //Differentiate between image and text and display the appropriate answer
         if (currentQuestion['choice' + choiceNumber].includes('assets/images')) {
@@ -101,15 +105,12 @@ choices.forEach(choice => {
         const classToApply =
             selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
 
-        //Array for the correct answer to the user
+        //Array for the correct/incorrect answer to the user
         let correctAnswerReply = ['Bombardo! Correct Answer!', 'Correct Answer! You are doing magical!', 'Yeah! Correct Answer!'];
-        const correctAnswerReplyIndex = Math.floor(Math.random() * correctAnswerReply.length);
-        const corrrectAnswerReplyRandom = correctAnswerReply[correctAnswerReplyIndex];
+        const corrrectAnswerReplyRandom = correctAnswerReply[Math.floor(Math.random() * correctAnswerReply.length)];
 
-        //Array for the inccorrect answer to the user
         let wrongAnswerReply = ['Expelliarmus! We got you! Wrong Answer', 'Are you a muggle? Wrong Answer!', "Oh no! Wrong Answer!"];
-        const wrongAnswerReplyIndex = Math.floor(Math.random() * wrongAnswerReply.length);
-        const wrongAnswerReplyRandom = wrongAnswerReply[wrongAnswerReplyIndex];
+        const wrongAnswerReplyRandom = wrongAnswerReply[Math.floor(Math.random() * wrongAnswerReply.length)];
 
         //Add class to DIV in case choices were pictures and not text
         if (selectedChoice.nodeName === 'IMG') {
@@ -124,7 +125,6 @@ choices.forEach(choice => {
             incrementScore(pointsCorrectAnswer);
             question.innerHTML = corrrectAnswerReplyRandom;
             question.classList.add('correct-text');
-
         } else {
             question.innerHTML = wrongAnswerReplyRandom;
             question.classList.add('incorrect-text');
@@ -150,3 +150,22 @@ function incrementScore(num) {
     score += num;
     scoreText.innerText = score;
 }
+
+/*Audio Player 
+Created using information from Stackflow
+https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link*/
+
+/**
+ * Play audio on button click
+ */
+function togglePlay() {
+    if (myAudio.paused) {
+        myAudio.play();
+        audioOffIcon.classList.remove("hide");
+        audioOnIcon.classList.add("hide");
+    } else {
+        myAudio.pause();
+        audioOffIcon.classList.add("hide");
+        audioOnIcon.classList.remove("hide");
+    }
+};
