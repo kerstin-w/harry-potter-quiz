@@ -11,12 +11,7 @@
 }
 
 body {
-    /*background: linear-gradient(to right, #33374B, #0c4c6c);*/
-    /*background-image: linear-gradient(to right top, #33374b, #36415b, #374c6c, #34577d, #2c638e, #256591, #1c6893, #0d6a96, #0d628b, #0d5b81, #0c5376, #0c4c6c);
-    
-    */
     background-image: linear-gradient(to right top, #120f16, #19181f, #201f28, #262831, #2c303b);
-    display: #fff;
     min-height: 100%;
     color: #fff;
 }
@@ -25,7 +20,7 @@ h1,
 h2,
 h3 {
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     color: #fff;
@@ -74,13 +69,13 @@ a {
 
 .drop-shadow-lg {
     -webkit-filter: drop-shadow(5px 5px 5px #435462);
-    filter: drop-shadow(5px 5px 5px #435462); 
+    filter: drop-shadow(5px 5px 5px #435462);
 }
 
 .glow {
-    -webkit-box-shadow:0px 0px 149px 55px rgba(157,209,196,0.69);
-    -moz-box-shadow: 0px 0px 149px 55px rgba(157,209,196,0.69);
-    box-shadow: 0px 0px 149px 55px rgba(157,209,196,0.69);
+    -webkit-box-shadow: 0px 0px 149px 55px rgba(157, 209, 196, 0.69);
+    -moz-box-shadow: 0px 0px 149px 55px rgba(157, 209, 196, 0.69);
+    box-shadow: 0px 0px 149px 55px rgba(157, 209, 196, 0.69);
     border-radius: 33px 117px 117px 117px;
     padding: 2rem;
 }
@@ -97,66 +92,6 @@ a {
     margin: 0 auto;
 }
 
-:root {
-    --gradient-shadow: linear-gradient(45deg,
-            #A6332E,
-            #3C4E91,
-            #366447,
-            #EFBC2F,
-            #A6332E,
-            #3C4E91,
-            #366447,
-            #EFBC2F);
-}
-
-.fancy-shadow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    text-align: center;
-    background-image: linear-gradient(to left bottom, #0c4c6c, #0d567a, #0d6087, #0d6a96, #0d74a4);
-    border-radius: 8px;
-
-}
-
-.fancy-shadow:before,
-.fancy-shadow:after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background: var(--gradient-shadow);
-    background-size: 400%;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    z-index: -1;
-    animation: animate 20s linear infinite;
-    border-radius: 8px;
-}
-
-.fancy-shadow:after {
-    filter: blur(20px);
-}
-
-@keyframes animate {
-    0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 300% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-}
-
-.header-logo a {
-    justify-content: center;
-}
-
 .logo {
     width: 5rem;
     height: fit-content;
@@ -171,7 +106,6 @@ a {
     padding: 50px;
     transition: all 0.5s;
     align-items: center;
-    justify-content: space-between;
 }
 
 .hamburger {
@@ -221,7 +155,6 @@ Created using information from W3S*/
 /* The navigation menu links */
 .sidenav a {
     padding: .8rem .8rem .8rem 3.2rem;
-    text-decoration: none;
     font-size: 1.8rem;
     color: #fff;
     display: block;
@@ -229,7 +162,7 @@ Created using information from W3S*/
 }
 
 .sidenav a:hover {
-    color: #dcb45c;
+    color: #9DD1C4;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.64);
 }
 
@@ -263,42 +196,12 @@ Created using information from W3S*/
     margin-left: 0;
 }
 
-.game-header {
-    width: 100%;
-}
-
-.game-container {
-    width: fit-content;
-}
-
-.text {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 2rem;
-    padding: 3rem;
-}
-
 .left-container {
     left: 0;
     width: 30vw;
     position: relative;
     font-size: 2rem;
     margin-right: 1.8rem;
-}
-
-.fade {
-    transform: scale(0.94);
-    animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
-}
-
-.fade-text {
-    display: inline-block;
-    opacity: 0;
-    filter: blur(4px);
-    font-size: 2rem;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
 .house-container {
@@ -336,7 +239,6 @@ Created using information from W3S*/
     display: flex;
     width: 300px;
     height: 300px;
-    text-decoration: none;
     justify-content: center;
 }
 
@@ -357,7 +259,6 @@ Created using information from W3S*/
     transform: none;
 }
 
-
 .red {
     background-color: #A6332E;
 }
@@ -374,6 +275,29 @@ Created using information from W3S*/
     background-color: #366447;
 }
 
+/* Homepage*/ 
+.game-header {
+    width: 100%;
+}
+
+.game-container {
+    width: fit-content;
+}
+
+.fade {
+    transform: scale(0.94);
+    animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.fade-text {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 @keyframes scale {
     100% {
@@ -417,7 +341,6 @@ Created using information from W3S*/
     animation: fade-in 0.4s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-
 @keyframes fade-in {
     100% {
         opacity: 1;
@@ -428,11 +351,10 @@ Created using information from W3S*/
 /* Games Page */
 #question {
     color: #9DD1C4;
-    font-size: 2rem;
     font-weight: 700;
+    text-align: revert;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    font-weight: 600;
     position: absolute;
     top: 5rem;
 }
@@ -440,7 +362,7 @@ Created using information from W3S*/
 .choice-text {
     font-size: 1.8rem;
     text-align: center;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 .choice-text>img {
@@ -489,7 +411,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: #a6332e;
+    background-color: #5A7C87;
     border-radius: 4px;
     box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.05);
 }
@@ -500,12 +422,12 @@ progress::-webkit-progress-value {
 
 .correct-text {
     color: green !important;
-    text-shadow: 1px 1px 1px #000000a6 !important;
+    text-shadow: 1px 1px 1px #120f16e0 !important;
 }
 
 .incorrect-text {
     color: red !important;
-    text-shadow: 1px 1px 1px #000000a6 !important;
+    text-shadow: 1px 1px 1px #120f16e0 !important;
 }
 
 .correct {
@@ -862,13 +784,14 @@ tr td:last-child {
         flex-wrap: wrap;
     }
 
-    .username  {
+    .username {
         width: auto;
     }
 
     .btn {
         margin: .8rem 0 0 0;
     }
+
     .light {
         margin: 0.8rem 0 0.8rem;
     }
