@@ -29,7 +29,8 @@ h3 {
 h1 {
     font-family: Harry Potter, sans-serif;
     color: #fff;
-    font-size: .8rem
+    font-size: .8rem;
+    text-align: center;
 }
 
 a {
@@ -115,8 +116,11 @@ a {
     border: #fff solid 3px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     padding: .5rem;
-    position: absolute;
+    position: sticky;
+    top: 20px;
+    position: -webkit-sticky;
 }
+
 
 #main,
 #hamburger {
@@ -276,6 +280,19 @@ Created using information from W3S*/
 }
 
 /* Homepage*/
+.start-logo {
+    align-items: center;
+    height: 90vh;
+}
+
+.start-logo a {
+    width: 40vw;
+}
+
+.start-logo a:hover {
+    transform: scale(1.2) perspective(1px)
+}
+
 .game-header {
     width: 100%;
 }
@@ -762,6 +779,10 @@ tr td:last-child {
     .logo {
         width: 3rem;
         padding-left: .5rem;
+    }
+
+    .start-logo a {
+        width: auto;
     }
 
     #hero {
