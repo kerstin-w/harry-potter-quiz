@@ -275,7 +275,7 @@ Created using information from W3S*/
     background-color: #366447;
 }
 
-/* Homepage*/ 
+/* Homepage*/
 .game-header {
     width: 100%;
 }
@@ -351,7 +351,6 @@ Created using information from W3S*/
 /* Games Page */
 #question {
     color: #9DD1C4;
-    font-weight: 700;
     text-align: revert;
     letter-spacing: 2.5px;
     text-transform: uppercase;
@@ -754,6 +753,10 @@ tr td:last-child {
         width: 100%;
         margin-right: 0;
         margin-bottom: 1.8rem;
+        text-align: center;
+    }
+    #question {
+        font-size: 1.8rem;
         text-align: center;
     }
 
