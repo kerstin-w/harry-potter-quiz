@@ -30,14 +30,23 @@
                 <!--Created using information from W3S-->
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <button class="btn" onclick="location.href='index.html';"><i class="fa-solid fa-hat-wizard"></i> Home</button>
-                    <button class="btn" onclick="location.href='instruction.html';"><i class="fa-solid fa-book"></i> Instruction</button>
-                    <button class="btn" onclick="location.href='game-score.html';"><i class="fa-solid fa-star"></i> Score</button>
+                    <button class="btn" onclick="location.href='index.html';"><i class="fa-solid fa-hat-wizard"></i>
+                        Home</button>
+                    <button class="btn" onclick="location.href='instruction.html';"><i class="fa-solid fa-book"></i>
+                        Instruction</button>
+                    <button class="btn" onclick="location.href='game-score.html';"><i class="fa-solid fa-star"></i>
+                        Score</button>
                 </div>
                 <div id="header" class="game-header flex">
-                    <span id="hamburger" onclick="openNav()">
-                        <i class="fa fa-bars hamburger"></i>
-                    </span>
+                    <div class="flex flex-column">
+                        <span id="hamburger" onclick="openNav()">
+                            <i class="fa fa-bars hamburger"></i>
+                        </span>
+                        <div id="player" onclick="togglePlay();">
+                            <div id="sound-on" class=""><i class="fa-solid fa-volume-xmark"></i></div>
+                            <div id="sound-off" class="hide"><i class="fa-solid fa-volume-high"></i></div>
+                        </div>
+                    </div>
                     <div class="header-logo flex" id="header-logo">
                         <a href="index.html" class="glow">
                             <img class="logo drop-shadow" src="assets/images/logo.png" alt="Harry Potter Logo">
@@ -51,6 +60,7 @@
         </header>
         <!-- Game Section -->
         <main id="main" class="flex">
+
             <div class="game-container flex wrap-reverse">
                 <div class="flex flex-start flex-column left-container question">
                     <h2 id="question" class="drop-shadow-lg">Question</h2>
@@ -109,6 +119,11 @@
             <p>Designed by Kerstin Weibeler 2023</p>
         </footer>
     </div>
+
+    <!-- Audio-->
+    <audio id="audio" src="assets/sounds/Harry_Potter_Theme_Song_Hedwigs_Theme.mp3" preload ="none" type="audio/mp3">
+    </audio>
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/db4afc7d29.js" crossorigin="anonymous"></script>
 
