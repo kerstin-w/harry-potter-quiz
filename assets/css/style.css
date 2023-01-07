@@ -347,6 +347,25 @@ Created using information from W3S*/
         filter: blur(0);
     }
 }
+/* Instruction Page */
+.instruction {
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-top: 0.6rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.instruction .heading {
+    margin-bottom: 2.8rem;
+}
+
+.instruction-content {
+    text-transform: none; 
+    font-size: 1.8rem;
+    margin-bottom: .9rem;
+}
 
 /* Games Page */
 #question {
@@ -449,7 +468,7 @@ progress::-webkit-progress-value {
     padding: 2rem;
 }
 
-.score-heading {
+.heading {
     text-align: center;
     text-decoration: underline overline;
     text-underline-offset: 15px;
