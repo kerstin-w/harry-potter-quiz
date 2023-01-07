@@ -72,6 +72,11 @@ a {
     filter: drop-shadow(5px 5px 5px #222);
 }
 
+.drop-shadow-lg {
+    -webkit-filter: drop-shadow(5px 5px 5px #435462);
+    filter: drop-shadow(5px 5px 5px #435462); 
+}
+
 .glow {
     -webkit-box-shadow:0px 0px 149px 55px rgba(157,209,196,0.69);
     -moz-box-shadow: 0px 0px 149px 55px rgba(157,209,196,0.69);
@@ -422,9 +427,8 @@ Created using information from W3S*/
 
 /* Games Page */
 #question {
-    color: #dcb45c;
+    color: #9DD1C4;
     font-size: 2rem;
-    text-shadow: 2px 2px 2px #A6332E;
     font-weight: 700;
     letter-spacing: 2.5px;
     text-transform: uppercase;
@@ -531,8 +535,8 @@ progress::-webkit-progress-value {
     font-size: 2.2rem;
     padding-top: 2rem;
     font-weight: bold;
-    color: #dcb45c;
-    text-shadow: 2px 2px 2px #a6332e;
+    color: #9DD1C4;
+
 }
 
 #end-score {
@@ -652,9 +656,8 @@ text {
 table {
     padding: 2rem;
     text-align: center;
-    color: #dcb45c;
     font-size: 1.7rem;
-    text-shadow: 2px 2px 2px #A6332E;
+    text-shadow: 2px 2px 2px #120f16;
     text-align: left;
     border-spacing: 0;
     width: 60vw;
@@ -662,7 +665,7 @@ table {
 
 th {
     padding: 10px 20px;
-    background-color: #ececeb27;
+    background-color: #ececeb17;
     text-align: center;
 }
 
@@ -670,11 +673,7 @@ th,
 td {
     border-style: solid;
     border-width: 0 2px 2px 0;
-    border-color: #dcb45c;
-}
-
-tbody {
-    border: 2px solid #dcb45c;
+    border-color: #9DD1C4;
 }
 
 td {
