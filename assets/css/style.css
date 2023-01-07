@@ -347,6 +347,7 @@ Created using information from W3S*/
         filter: blur(0);
     }
 }
+
 /* Instruction Page */
 .instruction {
     font-size: 2rem;
@@ -363,7 +364,7 @@ Created using information from W3S*/
 }
 
 .instruction-content {
-    text-transform: none; 
+    text-transform: none;
     font-size: 1.8rem;
     margin-bottom: .9rem;
 }
@@ -682,9 +683,26 @@ tr td:last-child {
     .left-container {
         margin-top: 1rem;
     }
-    
+
     .instruction {
         max-width: 100%;
+    }
+
+    #highscore {
+        padding: 0;
+    }
+
+    #highscore .heading {
+        padding: 2rem;
+    }
+
+    td .small {
+        width: 80px;
+        height: 80px;
+    }
+
+    td:first-child {
+        padding: 0;
     }
 }
 
