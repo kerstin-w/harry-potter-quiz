@@ -470,6 +470,13 @@ progress::-webkit-progress-value {
 .bg {
     border: 2px solid #fff;
     border-radius: 2rem;
+    box-shadow: 6.7px 9.5px 32.6px rgb(0 0 0 / 4%),
+        8.4px 11.9px 45px rgb(0 0 0 / 6%),
+        9px 12.8px 51.9px rgb(0 0 0 / 8%),
+        9.9px 14px 56.9px rgb(0 0 0 / 10%),
+        11.4px 16.1px 62.1px rgb(0 0 0 / 11%),
+        13.8px 19.5px 70.3px rgb(0 0 0 / 12%),
+        17px 24px 95px rgb(0 0 0 / 13%);
 }
 
 .username {
@@ -541,19 +548,6 @@ text {
 
 .high-score>img {
     margin-left: 1.5rem;
-}
-
-.table-wrapper {
-    border: 2px solid #fff;
-    border-radius: 2rem;
-    box-shadow:
-        6.7px 9.5px 32.6px rgba(0, 0, 0, 0.036),
-        8.4px 11.9px 45px rgba(0, 0, 0, 0.059),
-        9px 12.8px 51.9px rgba(0, 0, 0, 0.078),
-        9.9px 14px 56.9px rgba(0, 0, 0, 0.095),
-        11.4px 16.1px 62.1px rgba(0, 0, 0, 0.109),
-        13.8px 19.5px 70.3px rgba(0, 0, 0, 0.121),
-        17px 24px 95px rgba(0, 0, 0, 0.13);
 }
 
 table {
@@ -755,6 +749,7 @@ tr td:last-child {
         margin-bottom: 1.8rem;
         text-align: center;
     }
+
     #question {
         font-size: 1.8rem;
         text-align: center;
