@@ -536,24 +536,20 @@ progress::-webkit-progress-value {
     padding-top: 2rem;
     font-weight: bold;
     color: #9DD1C4;
-
+    text-shadow: 2px 2px 2px #120f16;
 }
 
 #end-score {
     margin: 2.8rem .6rem 2rem;
     text-align: center;
+    letter-spacing: 2.5px;
+    line-height: 2.8rem;
 }
 
 .bg {
     background-color: #ececeb30;
     border: 2px solid #fff;
     border-radius: 2rem;
-}
-
-#final-score {
-    margin-top: 1rem;
-    color: #dcb45c;
-    letter-spacing: 2.5px;
 }
 
 .username {
@@ -575,7 +571,7 @@ text {
 }
 
 ::placeholder {
-    color: #0c4c6c;
+    color: #9DD1C4;
     opacity: .8;
 }
 
