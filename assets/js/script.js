@@ -20,10 +20,11 @@ function openNav() {
     elmAddMargin[i].classList.add('margin-nav-open');
   }
 
-  for (let i = 0; i < elmHidden.length; i++) {
-    elmHidden[i].style.visibility = "hidden";
-  }
   sideNav.classList.add('width-nav-open');
+  hamburger.style.visibility = "hidden";
+  houseLogo.style.visibility = "hidden";
+  audioPlayer.style.visibility = "hidden";
+  audioPlayer.classList.add('margin-nav-open')
 };
 
 /**
@@ -34,10 +35,11 @@ function closeNav() {
     elmAddMargin[i].classList.remove('margin-nav-open');
   }
 
-  for (let i = 0; i < elmHidden.length; i++) {
-    elmHidden[i].style.visibility = "visible";
-  }
   sideNav.classList.remove('width-nav-open');
+  hamburger.style.visibility = "visible";
+  houseLogo.style.visibility = "visible";
+  audioPlayer.style.visibility = "visible";
+  audioPlayer.classList.remove('margin-nav-open')
 };
 
 //Game 
