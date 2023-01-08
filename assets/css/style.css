@@ -236,11 +236,6 @@ Created using information from W3S*/
     cursor: pointer;
 }
 
-.house:hover {
-    outline: .8rem solid #fff;
-    transform: scale(1.05);
-}
-
 .house-link {
     display: flex;
     width: 300px;
@@ -693,7 +688,13 @@ tr td:last-child {
 
 
 /* Media Queries */
-
+@media (hover: hover) and (pointer: fine) {
+    .house:hover {
+        outline: .8rem solid #fff;
+        transform: scale(1.05);
+    }
+  }
+  
 /*Mobile */
 @media screen and (max-width: 450px) {
     html {
@@ -835,6 +836,7 @@ tr td:last-child {
     #question {
         font-size: 1.8rem;
         text-align: center;
+        width: 100%;
     }
 
     .house-container {
