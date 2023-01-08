@@ -685,15 +685,19 @@ tr td:last-child {
     filter: drop-shadow(5px 5px 5px #222);
 }
 
+.house:hover {
+    outline: .8rem solid #fff;
+    transform: scale(1.05);
+}
 
 
 /* Media Queries */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
     .house:hover {
         outline: .8rem solid #fff;
         transform: scale(1.05);
     }
-  }
+  } */
   
 /*Mobile */
 @media screen and (max-width: 325px) {
