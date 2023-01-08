@@ -696,6 +696,12 @@ tr td:last-child {
   }
   
 /*Mobile */
+@media screen and (max-width: 325px) {
+    #hero .small {
+        visibility: hidden;
+    }
+}
+
 @media screen and (max-width: 450px) {
     html {
         font-size: 70%;
