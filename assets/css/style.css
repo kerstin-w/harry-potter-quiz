@@ -413,6 +413,7 @@ Created using information from W3S*/
     font-size: 1.8rem;
     text-align: center;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    padding: .3rem;
 }
 
 .choice-text>img {
