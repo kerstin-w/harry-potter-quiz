@@ -99,7 +99,6 @@ a {
 
 .logo {
     width: 5rem;
-    height: fit-content;
     cursor: pointer;
     display: block;
     margin-left: auto;
