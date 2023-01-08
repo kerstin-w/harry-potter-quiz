@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior:smooth;
+}
+
 body {
     background-image: linear-gradient(to right top, #120f16, #19181f, #201f28, #262831, #2c303b);
     min-height: 100%;
