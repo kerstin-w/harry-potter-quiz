@@ -289,7 +289,8 @@ https://www.w3schools.com/howto/howto_js_sidenav.asp
     width: 100%;
 }
 
-.game-container {
+.game-container,
+.game-container-start  {
     width: fit-content;
 }
 
@@ -841,8 +842,13 @@ tr td:last-child {
         width: auto;
     }
 
-    .game-container {
+    .game-container,
+    .game-container-start {
         flex-wrap: wrap;
+    }
+
+    .game-container-start {
+        height: 70vh;
     }
 
     .left-container {
