@@ -1,4 +1,3 @@
-'use strict';
 /**
  * Question array for each Hogwards House
  */
@@ -247,84 +246,84 @@ const questionsArray = {
         },
     ],
     'slytherin': [{
-        question: 'Who is the founder of the house of Slytherin?',
-        choice1: 'Keith Slytherin',
-        choice2: 'Salazar Slytherin',
-        choice3: 'Severus Slytherin',
-        choice4: 'Thomas Slytherin',
-        correctAnswer: 2
-    },
-    {
-        question: 'Which of these people was not a head of Slytherin house?',
-        choice1: 'Severus Snape',
-        choice2: 'Salazar Slytherin',
-        choice3: 'Horace Slughorn',
-        choice4: 'Albus Dumbledore',
-        correctAnswer: 4
-    },
-    {
-        question: 'What qualities do Slytherin students possess?',
-        choice1: 'Ambition, shrewdness and cunning',
-        choice2: 'Courage, bravery, nerve and chivalry',
-        choice3: 'Hard work, patience, justice, and loyalty',
-        choice4: 'Intelligence, creativity, learning, and wit',
-        correctAnswer: 1
-    },
-    {
-        question: 'Where is the Slytherin common room located?',
-        choice1: 'West Tower',
-        choice2: 'Dark Tower',
-        choice3: 'In the dungeons of Hogwarts Castle and underneath the Black Lake',
-        choice4: 'Turris Magnus',
-        correctAnswer: 3
-    },
-    {
-        question: 'In the French translation of the Harry Potter books, what is Slytherin called?',
-        choice1: "Un cochon d'Inde",
-        choice2: 'Serpentard',
-        choice3: 'Un perroquet',
-        choice4: 'Un lapin noir',
-        correctAnswer: 2
-    },
-    {
-        question: 'Which famous wizard was part of Slytherin house?',
-        choice1: 'Doctor Strange',
-        choice2: 'Merlin',
-        choice3: 'Gandalf',
-        choice4: 'The Crimson King',
-        correctAnswer: 2
-    },
-    {
-        question: 'Which animal belongs to the house of Stlytherin?',
-        choice1: 'assets/images/game-questions/animal-2.png',
-        choice2: 'assets/images/game-questions/animal-3.png',
-        choice3: 'assets/images/game-questions/animal-4.png',
-        choice4: 'assets/images/game-questions/animal-1.png',
-        correctAnswer: 3
-    },
-    {
-        question: 'Which on is the Slytherin resident ghost?',
-        choice1: 'assets/images/game-questions/headlessnick.webp',
-        choice2: 'assets/images/game-questions/fatfair.webp',
-        choice3: 'assets/images/game-questions/baron.webp',
-        choice4: 'assets/images/game-questions/myrtle.webp',
-        correctAnswer: 3
-    },
-    {
-        question: "What animal is featured on Salazar's locket, which became Voldemort's third horcrux?",
-        choice1: 'Lion',
-        choice2: 'Badger',
-        choice3: 'Serpent',
-        choice4: 'Raven',
-        correctAnswer: 3
-    },
-    {
-        question: 'Who was not part of Slytherin house?',
-        choice1: 'Narcissa Malfoy',
-        choice2: 'Bellatrix Lestrange',
-        choice3: 'Dolores Umbridge',
-        choice4: 'Sirius Black',
-        correctAnswer: 4
-    },
-]
+            question: 'Who is the founder of the house of Slytherin?',
+            choice1: 'Keith Slytherin',
+            choice2: 'Salazar Slytherin',
+            choice3: 'Severus Slytherin',
+            choice4: 'Thomas Slytherin',
+            correctAnswer: 2
+        },
+        {
+            question: 'Which of these people was not a head of Slytherin house?',
+            choice1: 'Severus Snape',
+            choice2: 'Salazar Slytherin',
+            choice3: 'Horace Slughorn',
+            choice4: 'Albus Dumbledore',
+            correctAnswer: 4
+        },
+        {
+            question: 'What qualities do Slytherin students possess?',
+            choice1: 'Ambition, shrewdness and cunning',
+            choice2: 'Courage, bravery, nerve and chivalry',
+            choice3: 'Hard work, patience, justice, and loyalty',
+            choice4: 'Intelligence, creativity, learning, and wit',
+            correctAnswer: 1
+        },
+        {
+            question: 'Where is the Slytherin common room located?',
+            choice1: 'West Tower',
+            choice2: 'Dark Tower',
+            choice3: 'In the dungeons of Hogwarts Castle and underneath the Black Lake',
+            choice4: 'Turris Magnus',
+            correctAnswer: 3
+        },
+        {
+            question: 'In the French translation of the Harry Potter books, what is Slytherin called?',
+            choice1: "Un cochon d'Inde",
+            choice2: 'Serpentard',
+            choice3: 'Un perroquet',
+            choice4: 'Un lapin noir',
+            correctAnswer: 2
+        },
+        {
+            question: 'Which famous wizard was part of Slytherin house?',
+            choice1: 'Doctor Strange',
+            choice2: 'Merlin',
+            choice3: 'Gandalf',
+            choice4: 'The Crimson King',
+            correctAnswer: 2
+        },
+        {
+            question: 'Which animal belongs to the house of Stlytherin?',
+            choice1: 'assets/images/game-questions/animal-2.png',
+            choice2: 'assets/images/game-questions/animal-3.png',
+            choice3: 'assets/images/game-questions/animal-4.png',
+            choice4: 'assets/images/game-questions/animal-1.png',
+            correctAnswer: 3
+        },
+        {
+            question: 'Which on is the Slytherin resident ghost?',
+            choice1: 'assets/images/game-questions/headlessnick.webp',
+            choice2: 'assets/images/game-questions/fatfair.webp',
+            choice3: 'assets/images/game-questions/baron.webp',
+            choice4: 'assets/images/game-questions/myrtle.webp',
+            correctAnswer: 3
+        },
+        {
+            question: "What animal is featured on Salazar's locket, which became Voldemort's third horcrux?",
+            choice1: 'Lion',
+            choice2: 'Badger',
+            choice3: 'Serpent',
+            choice4: 'Raven',
+            correctAnswer: 3
+        },
+        {
+            question: 'Who was not part of Slytherin house?',
+            choice1: 'Narcissa Malfoy',
+            choice2: 'Bellatrix Lestrange',
+            choice3: 'Dolores Umbridge',
+            choice4: 'Sirius Black',
+            correctAnswer: 4
+        },
+    ]
 };
