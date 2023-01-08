@@ -117,3 +117,89 @@ Afterwards, all pages passed with zero error.
 
 </details>
 
+## <a name="lighthouse">LightHouse</a>
+
+---
+
+Lighthouse was used (accessed through Developer Tools in Chrome) to analyse for the following:
+
+- Performance
+- Accessibility
+- Best practice
+- SEO
+
+### Desktop Results
+
+<details>
+<summary>Homepage</summary>
+
+![Screenshot of Lighthouse Desktop Validator Results for InnSki homepage](assets/testing/lh-desktop-index.jpg)
+
+</details>
+<details>
+<summary>Game Page</summary>
+
+![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-desktop-game.jpg)
+
+</details>
+<details>
+<summary>Game End Page</summary>
+
+![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-desktop-end.jpg)
+
+</details>
+<details>
+<summary>Score Page</summary>
+
+![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-desktop-score.jpg)
+
+</details>
+<details>
+<summary>Instruction Page</summary>
+
+![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-desktop-instruction.jpg)
+
+</details>
+
+### Mobile Results
+
+<details>
+<summary>Homepage</summary>
+
+![Screenshot of Lighthouse Desktop Validator Results for InnSki homepage](assets/testing/lh-mobile-index.jpg)
+
+</details>
+<details>
+<summary>Game Page</summary>
+
+![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-mobile-game.jpg)
+
+</details>
+<details>
+<summary>Game End Page</summary>
+
+![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-mobile-end.jpg)
+
+</details>
+<details>
+<summary>Score Page</summary>
+
+![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-mobile-score.jpg)
+
+</details>
+<details>
+<summary>Instruction Page</summary>
+
+![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-mobile-instruction.jpg)
+
+</details>
+
+## <a name="browser-compatibility">Browser Compatibility</a>
+
+---
+
+This website was tested on Chrome, Microsoft Edge, and Firefox for desktop.
+
+The website was tested on Safari for mobile and tablet.
+
+- The outline hover effect for the house boxes appeared to be a problem in Safari. See [Unresolved](#unresolved).
