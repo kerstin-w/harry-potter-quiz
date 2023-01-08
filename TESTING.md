@@ -84,3 +84,36 @@ Results of the CSS test of style.css:
 ![Screenshot of WC3 testing](assets/testing/w3c-css.jpg)
 
 </details>
+
+### <a name="js">JS</a>
+
+[JSHint JS Validator](https://jshint.com/)
+
+All JavaScript files were validated through JSHint.
+
+<details>
+<summary>Result</summary>
+
+![Screenshot of JSHint testing](assets/testing/jshint.jpg)
+
+</details>
+
+## <a name="wave">WAVE</a>
+
+---
+
+[WAVE](https://wave.webaim.org/)
+
+The WAVE WebAIM web accessibility evaluation tool was used to check for accessibility standards.
+
+The first result gave an contrast error for the yellow house box with white text. Therefore the original Huffelpuff yellow needed to be changed to an orange color.
+
+Afterwards, all pages passed with zero error.
+
+<details>
+<summary>Result</summary>
+
+![Screenshot of WAVE Validator Results](assets/testing/wave.jpg)
+
+</details>
+
