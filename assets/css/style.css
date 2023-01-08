@@ -701,10 +701,6 @@ tr td:last-child {
 }
 
 @media screen and (max-width: 450px) {
-    html {
-        font-size: 70%;
-    }
-
     .width-nav-open {
         width: 100vw;
     }
@@ -762,9 +758,14 @@ tr td:last-child {
 }
 
 @media screen and (max-width: 505px) {
+    html {
+        font-size: 70%;
+    }
     .house {
-        width: 100px;
-        height: 100px;
+        width: 110px;
+        height: 110px;
+        margin: 1rem;
+        outline-offset: 0.2rem
     }
 
     .house-link img {
@@ -894,6 +895,10 @@ tr td:last-child {
         max-height: 100%;
     }
 
+    .choice-text {
+        font-size: 1.2rem;
+    }
+
     #house-logo {
         position: absolute;
         right: 0;
@@ -907,10 +912,6 @@ tr td:last-child {
 
     #game {
         top: 0;
-    }
-
-    .choice-text {
-        font-size: 1.2rem;
     }
 }
 
