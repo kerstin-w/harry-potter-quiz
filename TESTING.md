@@ -227,3 +227,58 @@ This website was tested on Chrome, Microsoft Edge, and Firefox for desktop.
 The website was tested on Safari for mobile and tablet.
 
 - The outline hover effect for the house boxes appeared to be a problem in Safari. See [Unresolved](#unresolved).
+
+## <a name="responsivity">Responsivity</a>
+
+---
+
+Responsiveness was tested through Chrome Developer tools. The devices tested include:
+
+- iPhone SE
+- iPhone XR
+- iPhone 12 Pro
+- Pixel 5
+- Samsung Galaxy S8+
+- Samsung Galaxy S20 Ultra
+- iPad Air
+- iPad Mini
+- Surface Pro 7
+- Surface Duo
+- Galaxy Fold
+- Samsung Galaxy A51
+
+I was able to directly test the website on an iPhone 13 mini and an iPad.
+
+## <a name="user-stories">User Stories</a>
+
+---
+
+## <a name="goals">Site Owner Goals</a>
+
+---
+
+## <a name="issues-bugs">Issues/ Bugs Found & Resolved</a>
+
+---
+
+### Validation Issue
+
+The initial test returned an error for the audio type on the Game page and a warning on the game score page. The aduio type was removed as well as the section on the game score page.
+
+### Wave Issue
+
+The first result gave an contrast error for the yellow house box with white text. Therefore the original Huffelpuff yellow needed to be changed to an orange color.
+
+### Hover on touch
+
+The hover effect on the house boxes created an issue on touch devices. After the first house/answer was selected, the hover effect remained on the next question. The solution was to set a media querie for this effect. Help was found [here](https://erikmartinjordan.com/remove-hover-effects-css-mobile).
+
+### Streched Header Logo on mobile
+
+During testing it was found out that the header logo was streched. This was fixed by setting a height.
+
+## <a name="unresolved">Unresolved</a>
+
+### Outline-Offset
+
+During testing it was found that set outline-offest on safari does not work as intended. The border is displayed square instead of round. I tried to solve this with the help of the CI Tutors. We tried and created pseudo-elements (::before and ::after) without desired result. After consultation with the tutor, I decided to keep it that way for now. Also considering the time resources and the fact that most of the users do not use Safari browser. In the future, however, the goal is to make the game display the same across all browsers.
