@@ -1,7 +1,5 @@
-'use-strict';
-
 // Declare const for DOM elements
-const housePick = localStorage.getItem('housePick');;
+const housePick = localStorage.getItem('housePick');
 const highScoresList = document.getElementById('highScoresList');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
@@ -11,20 +9,17 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
  */
 highScoresList.innerHTML = highScores
 
-.map(score => {
-    return `
+    .map(score => {
+        return `
     <tr>
     <td>${score.name}</td>
     <td>${score.score}</td>
     <td><img class="house small" src="assets/images/${score.house}.png" alt="House Logo"></td>
-    </tr>
-
-    `
-})
-.join("");
+    </tr>`;
+    })
+    .join("");
 
 function deleteStorage() {
     localStorage.clear();
     return window.location.assign('./index.html');
-  }
-
+}

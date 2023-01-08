@@ -1,10 +1,8 @@
-'use-strict';
-
 // Declare const for DOM elements
 const username = document.getElementById('username');
 const endScore = document.getElementById('end-score');
 const lastScore = localStorage.getItem('lastScore');
-const housePick = localStorage.getItem('housePick');;
+const housePick = localStorage.getItem('housePick');
 const saveScore = document.getElementById('save-score');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
@@ -18,8 +16,7 @@ if (lastScore >= 80) {
 } else {
     endScore.innerText = `${lastScore} Points! 
     Maybe another house will suit you better`;
-};
-
+}
 
 /**
  * Enable the save button

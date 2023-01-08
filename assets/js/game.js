@@ -1,4 +1,3 @@
-'use strict';
 // Declare const for DOM elements
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
@@ -7,7 +6,6 @@ const scoreText = document.getElementById('score');
 const housePick = localStorage.getItem("housePick");
 const progressBar = document.getElementById('progress-bar');
 const myAudio = document.getElementById("audio");
-const soundIcon = document.getElementById("soundIcon");
 const audioOffIcon = document.getElementById("sound-off");
 const audioOnIcon = document.getElementById("sound-on");
 
@@ -75,7 +73,7 @@ function getNewQuestion() {
         //Differentiate between image and text and display the appropriate answer
         if (currentQuestion['choice' + choiceNumber].includes('assets/images')) {
             choice.replaceChildren();
-            choice.innerHTML += `<img src=${imageChoice} data-choice="${choiceNumber}">`
+            choice.innerHTML += `<img src=${imageChoice} data-choice="${choiceNumber}">`;
         } else {
             choice.innerText = currentQuestion['choice' + choiceNumber];
         }
@@ -101,7 +99,6 @@ choices.forEach(choice => {
         const selectedAnswer = selectedChoice.dataset.choice;
         const currentCorrectAnswer = currentQuestion.correctAnswer;
         const currentCorrectAnswerBox = document.querySelector(`[data-choice="${currentCorrectAnswer}"]`);
-        console.log(selectedAnswer);
         const classToApply =
             selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
 
@@ -117,7 +114,6 @@ choices.forEach(choice => {
             selectedChoice.parentElement.classList.add(classToApply);
         } else {
             selectedChoice.classList.add(classToApply);
-            console.log(selectedChoice.nodeName);
         }
 
         //Display random replies to user and show correct answer, in case user was wrong
@@ -168,4 +164,4 @@ function togglePlay() {
         audioOffIcon.classList.add("hide");
         audioOnIcon.classList.remove("hide");
     }
-};
+}
