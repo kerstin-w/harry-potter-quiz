@@ -136,9 +136,6 @@ a {
 
 #hamburger {
     height: fit-content;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 20px;
 }
 
 .wrapper {
@@ -398,6 +395,12 @@ Created using information from W3S*/
 
 .hide {
     display: none;
+}
+
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
 }
 
 #question {
