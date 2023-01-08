@@ -14,7 +14,7 @@ highScoresList.innerHTML = highScores
     <tr>
     <td>${score.name}</td>
     <td>${score.score}</td>
-    <td><img class="house small" src="assets/images/${score.house}.png" alt="House Logo"></td>
+    <td><img class="small" src="assets/images/${score.house}.png" alt="House Logo"></td>
     </tr>`;
     })
     .join("");
