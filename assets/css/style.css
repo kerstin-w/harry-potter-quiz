@@ -450,11 +450,11 @@ https://www.w3schools.com/howto/howto_js_sidenav.asp
 }
 
 .correct {
-    outline: .8rem solid green !important;
+    outline: .5rem solid green !important;
 }
 
 .incorrect {
-    outline: .8rem solid red !important;
+    outline: .5rem solid red !important;
 }
 
 /*Score and Progress Bar*/
@@ -705,7 +705,7 @@ tr td:last-child {
 /* Media Queries */
 @media (hover: hover) and (pointer: fine) {
     .house:hover {
-        outline: .8rem solid #fff;
+        outline: .5rem solid #fff;
         transform: scale(1.05);
     }
 }
