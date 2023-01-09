@@ -247,7 +247,7 @@ This project was deployed from its Github repository to Github Pages:
 - [W3Schools](https://www.w3schools.com/) & [MDN](https://developer.mozilla.org/): General source of help and guidance throughout this project.
 - [W3Schools](https://www.w3schools.com/howto/howto_js_sidenav.asp): Guidance on creating a side navigation.
 - [Nguyễn Quyết](https://betterprogramming.pub/rewrite-your-own-array-methods-foreach-map-filter-find-reduce-1718e1138c3e): Guidance for Array Methods.
-- [freeCodeCamp](https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/#:~:text=The%20JavaScript%20setTimeout()%20method,to%20pass%20one%20thousand%20milliseconds%20.): Guidance on setting a Timeout with JavaScript.
+- [freeCodeCamp](https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/): Guidance on setting a Timeout with JavaScript.
 - [Benjamin Knight](https://codepen.io/benknight/pen/BywEpw): Guidance on styling a Progressbar. 
 - [CSS {In Real Life }](https://css-irl.info/drop-shadow-the-underrated-css-filter/): Guidance for drop shadow.
 
