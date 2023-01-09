@@ -657,6 +657,9 @@ tr td:nth-child(2) {
 tr td:last-child {
     text-align: center;
 }
+.secondary-page .hamburger {
+    position: absolute;
+}
 
 #score-page {
     padding-bottom: 2rem;
