@@ -33,10 +33,12 @@
 | Homepage   | Harry Potter Logo links to main section to start the game                              |          Yes           |
 | Homepage   | Images and text flex responsively                                                      |          Yes           |
 | Homepage   | New game open with the house selected by user                                          |          Yes           |
+| Homepage   | Hamburger menu stays sticky to top                                                     |          Yes           |
 | Game       | Images and text flex responsively                                                      |          Yes           |
 | Game       | New game loads a random question of the selected house                                 |          Yes           |
 | Game       | Scorebaord increments number of questions, score and progress bar                      |          Yes           |
 | Game       | Green border is applied to correct answer an red border is applied to incorrect answer |          Yes           |
+| Game       | Random Answer is displayed with appropiate class (correct/incorrect) is applied        |          Yes           |
 | Game       | Push current question out of question array                                            |          Yes           |
 | Game       | Audio plays when clicked                                                               |          Yes           |
 | Game End   | Final Score is displayed                                                               |          Yes           |
