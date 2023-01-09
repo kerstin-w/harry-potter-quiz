@@ -25,6 +25,7 @@ This quiz is built for all Harry Potter fans to answer questions about their fav
     - [Game Page](#game-page)
     - [Game End Page](#game-end)
     - [Game Score Page](#game-score)
+    - [Instruction Page](#instruction)
 - [Technologies](#technologies)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -138,7 +139,7 @@ Once the user clicks on the hambuger icon, the navigation will slide out. On des
 ![Game Page on Mobile](assets/readme/game-page-mobile.jpg "Game Page on Mobile")
 
 * On the Game Page, the corresponding questions and answers are loaded according to the user's previous selection. 
-At the top right, the corresponding house logo is loaded.
+At the top right, the corresponding house logo is loaded.The user can play or pause the audio via the audio icon.
 
 ![Game Page on Desktop](assets/readme/game-page1-desktop.jpg "Game Page on Desktop")
 ![Game Page on Mobile](assets/readme/game-page1-mobile.jpg "Game Page on Mobile")
@@ -158,3 +159,99 @@ At the top right, the corresponding house logo is loaded.
 ![Page Score Page on Mobile](assets/readme/game-score-mobile.jpg "Game Score Page on Mobile")
 
 * The user is presented with a table with the current score and the saved ones. The name of the score and the house that was played are displayed.
+
+### <a name="instruction">Instruction Page</a>
+
+![Instruction Page on Desktop](assets/readme/instruction-desktop.jpg "Instruction Page on Desktop")
+![Instruction Page on Mobile](assets/readme/instruction-mobile.jpg "Instruction Page on Mobile")
+
+* The Instruction Page gives the user instructions on how the game is played and can be found via the navigation.
+
+## <a name="technologies">Technologies</a>
+
+---
+
+### Languages
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://www.javascript.com/)
+
+### Other
+
+- [Color Space](https://mycolor.space/) - Colour Pallete
+- [Colors Wall](https://colorswall.com/) - Colour Pallete
+- [Google Fonts](https://fonts.google.com/) - Fonts
+- [CDN Fonts](https://www.cdnfonts.com/) - Fonts
+- [Tiny PNG](https://tinypng.com/) - Compress Images
+- [Color Space](https://mycolor.space/) - Gradient Background
+- [HTML-CSS-JS](https://html-css-js.com/css/generator/text-shadow/) - Text Shadow Generator
+- [CSS Matic](https://www.cssmatic.com/box-shadow) - Box Shadow Generator
+- [Font Awesome](https://fontawesome.com/) - Icons
+- [RealFaviconGenerator](https://realfavicongenerator.net/) - Favicon Creater
+- [Balsamiq](https://balsamiq.com/) - Wireframes
+- [Github](https://github.com/) - Storing and hosting repository
+- [Gitpod](https://www.gitpod.io/) - Code editor
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+
+## <a name="testing">Testing</a>
+
+---
+
+See [TESTING.md](TESTING.md) for an overview of website testing and debugging.
+
+## <a name="#deployment">Deployment</a>
+
+---
+
+This project was created through [GitHub](https://github.com/):
+
+1. Locating repository, clicking on the "New" button.
+2. Selecting the relevant template: "Code-Institute-Org/gitpod-full-template"
+3. Adding the repository name "innski".
+4. Clicking the button "Create repository".
+
+This project was developed using [GitPod](https://gitpod.io/) and committed and pushed to GitHub using the GitPod terminal. Following "git commands" were used:
+
+1. **git add .** - This command for multiple files to the staging area before commiting.
+2. **git commit -m "Message explaining upadate"** - This command explained changes that were done to the repository.
+3. **git push** - This command was used to push all committed changes to the GitHub Repository.
+
+This project was deployed from its Github repository to Github Pages:
+
+1. Log in to Github account
+2. From the projects repository selecting "Settings" tab.
+3. Click on "Pages" from the left-hand menu
+4. The "Source" box must state "Deplay from branch"
+5. Under "Branch", click the dropdown named "None" and select "main".
+6. Click save.
+7. After a few seconds, refresh the page and retrieve the link.
+
+## <a name="#references-credit">References & Credit</a>
+
+---
+
+### Media & Fonts
+
+- [tiny.png](https://tinypng.com/): Used to compress media files
+- [Kind Png](https://www.kindpng.com/) & [Harry Potter Fandom](https://harrypotter.fandom.com/): Resources for images
+- [Archive](https://archive.org/details/HarryPotter-hedwigTheme): Resource for Harry Potter Theme Audio
+- [Font Awesome](https://fontawesome.com/): Resource for icons
+- [Google Fonts](https://fonts.google.com): Used as font library
+- [CDN Fonts](https://www.cdnfonts.com/): Used as font library
+- [Remove](https://www.remove.bg/de): Used to create a transparent PNG
+- [RealFaviconGenerator](https://realfavicongenerator.net/): Used to create a Favicon
+
+### Code
+
+- [W3Schools](https://www.w3schools.com/) & [MDN](https://developer.mozilla.org/): General source of help and guidance throughout this project.
+- [W3Schools](https://www.w3schools.com/howto/howto_js_sidenav.asp): Guidance on creating a side navigation.
+- [Nguyễn Quyết](https://betterprogramming.pub/rewrite-your-own-array-methods-foreach-map-filter-find-reduce-1718e1138c3e): Guidance for Array Methods.
+- [freeCodeCamp](https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/#:~:text=The%20JavaScript%20setTimeout()%20method,to%20pass%20one%20thousand%20milliseconds%20.): Guidance on setting a Timeout with JavaScript.
+- [Benjamin Knight](https://codepen.io/benknight/pen/BywEpw): Guidance on styling a Progressbar. 
+- [CSS {In Real Life }](https://css-irl.info/drop-shadow-the-underrated-css-filter/): Guidance for drop shadow.
+
+### Content
+
+All the questions provided in the game were taken from [Beano](https://www.beano.com/posts/the-ultimate-hufflepuff-quiz)
+
