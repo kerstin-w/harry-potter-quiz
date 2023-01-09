@@ -128,7 +128,8 @@ choices.forEach(choice => {
         }
 
         /*Set the time out and load new question. 
-        Created using information from FreeCodeCamp.*/
+        Created using information from FreeCodeCamp.
+        https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/*/
         setTimeout(() => {
             selectedChoice.classList.remove(classToApply);
             selectedChoice.parentElement.classList.remove(classToApply);
