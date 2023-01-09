@@ -735,7 +735,7 @@ tr td:last-child {
     }
 
     .margin-nav-open {
-        margin-left: 100%;
+        margin-left: 100vw;
     }
 
     .width-nav-close {

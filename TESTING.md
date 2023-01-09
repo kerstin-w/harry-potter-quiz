@@ -255,9 +255,37 @@ I was able to directly test the website on an iPhone 13 mini and an iPad.
 
 ---
 
+*As a user, I want to understand what the game is about.*
+
+This was achieved by the Harry Potter banner on the start page, the direct and intuitive selection of the houses on the start page and a supporting instruction page.
+
+*As a user, I want to easily navigate through the game even on the first visit.*
+
+This was achieved by the direct and intuitive selection of the houses on the start page. After that, the game takes over the control and the user only has to concentrate on answering the questions. If the user wants to exit, this can be done at any time via the navigation. 
+
+*As a user, I want to access the game easily.*
+
+This was achieved through the direct access on the homepage.
+
+*As a user, I want to be able to see my final result.*
+
+This is achieved by the Game End page, which shows the user the score immediately after finishing the game. The score is then saved and can also be viewed by the user afterwards via the High Score table.
+
 ## <a name="goals">Site Owner Goals</a>
 
 ---
+
+*As a site owner, I want to build an appealing online quiz.*
+
+This was achieved through a modern and dark design, which is suited to the Harry Potter topic. The game questions offer a good mix of challenging and easier questions, so that users with a high and lower level of knowledge can enjoy playing.
+
+*As a site owner, I want to build a quiz which is easy to navigate.*
+
+This was achieved by a simple and direct entry on the start page. After that, new questions are loaded immediately, without any action on the part of the user. Once the user has answered all 10 questions, the game forwards the user automatically to view and save the score.
+
+*As a site owner, I want to build a quiz which is fun for the user and keeps users attention.*
+
+This was achieved through an interesting topic, text questions of various difficulty levels and the inclusion of some picture questions. 
 
 ## <a name="issues-bugs">Issues/ Bugs Found & Resolved</a>
 
