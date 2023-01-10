@@ -3,7 +3,7 @@ const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progress-text');
 const scoreText = document.getElementById('score');
-const housePick = localStorage.getItem("housePick");
+const selectedHouse = localStorage.getItem("housePick");
 const progressBar = document.getElementById('progress-bar');
 const myAudio = document.getElementById("audio");
 const audioOffIcon = document.getElementById("sound-off");
@@ -28,23 +28,23 @@ let acceptingAnswers;
 
 //Wait for the DOM to finish loading before running the game
 document.addEventListener("DOMContentLoaded", function () {
-    newGame(housePick);
+    newGame(selectedHouse);
 });
 
 /**
  * Start a new game
  * */
-function newGame(housePick) {
+function newGame(selectedHouse) {
     score = 0;
     questionCounter = 0;
-    gameQuestions = questionsArray[housePick];
+    gameQuestions = questionsArray[selectedHouse];
     availableQuestions = [...gameQuestions];
     getNewQuestion();
 
     //Display House logo depending on which house was picked by the user
-    document.getElementById('house-logo').innerHTML = `<img src="assets/images/${housePick}.png" alt="Hogwards House Logo">`;
+    document.getElementById('house-logo').innerHTML = `<img src="assets/images/${selectedHouse}.png" alt="Hogwards House Logo">`;
 
-    localStorage.setItem('housePick', housePick);
+    //localStorage.setItem('selectedHouse', selectedHouse);
 }
 
 
@@ -162,7 +162,7 @@ function finaleResult() {
     //Display the end score of the game and an evaluation
     if (score >= 80) {
         endScore.innerText = `${score} Points! 
-          You are a true ${housePick}`;
+          You are a true ${selectedHouse}`;
     } else if (score >= 50) {
         endScore.innerText = `${score} Points! 
           You did well`;
@@ -196,7 +196,7 @@ saveHighScore = (e) => {
     const userEndResult = {
         score: score,
         name: username.value,
-        house: housePick,
+        house: selectedHouse,
     };
     highScores.push(userEndResult);
     highScores.sort((a, b) => b.score - a.score);
