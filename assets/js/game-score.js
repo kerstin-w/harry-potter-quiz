@@ -1,5 +1,4 @@
 // Declare const for DOM elements
-const housePick = localStorage.getItem('housePick');
 const highScoresList = document.getElementById('highScoresList');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
