@@ -46,6 +46,5 @@ function closeNav() {
  */
 function newHouse(currentHouse) {
   const house = currentHouse.getAttribute("data-house");
-  console.log(house);
   localStorage.setItem('house', house);
 }
