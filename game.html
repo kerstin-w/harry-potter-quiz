@@ -58,15 +58,15 @@
                 </div>
             </div>
         </header>
-        <!-- Game Section -->
-        <main id="main" class="flex">
 
-            <div class="game-container flex wrap-reverse">
+        <main id="main" class="flex">
+            <!-- Game Section -->
+            <div id="game" class="game-container flex wrap-reverse">
                 <div class="flex flex-start flex-column left-container question">
                     <h2 id="question" class="drop-shadow-lg">Question</h2>
 
-                    <!-- Score -->
-                    <div id="game" class="flex left-container flex-column">
+                    <!-- Score Board -->
+                    <div class="flex left-container flex-column">
                         <div id="scoreboard">
                             <div>
                                 <div id="progress-text" class="box-score drop-shadow">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Answer choices -->
                 <div class="house-container flex">
                     <div class="col-1 flex">
                         <div class="house red flex choice-text" data-choice="1">
@@ -100,6 +100,24 @@
                             <p class="choice drop-shadow"></p>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!--Save Score Section-->
+            <div id="end" class="flex-column flex-center hide">
+                <div class="bg">
+                    <div class="box-score">
+                        <h2 class="heading">Your Score:</h2>
+                        <h3 id="end-score" class="drop-shadow">0</h3>
+                    </div>
+                    <form class="flex-center form">
+                        <input class="username" type="text" name="username" id="username" placeholder="Enter your name"
+                            required minlength="2" maxlength="12">
+                        <button type="submit" class="btn" id="save-score" onclick="saveHighScore(event)" disabled
+                            title="Enter your name to save your score!">
+                            <span><i class="fa-solid fa-wand-sparkles"></i> Save your score</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </main>

@@ -291,7 +291,7 @@ https://www.w3schools.com/howto/howto_js_sidenav.asp
 }
 
 .game-container,
-.game-container-start  {
+.game-container-start {
     width: fit-content;
 }
 
@@ -505,6 +505,10 @@ progress::-webkit-progress-value {
 }
 
 /* Game End*/
+#end {
+    width: 100%;
+}
+
 #end-score {
     margin: 2.8rem .6rem 2rem;
     text-align: center;
@@ -662,6 +666,7 @@ tr td:nth-child(2) {
 tr td:last-child {
     text-align: center;
 }
+
 .secondary-page .hamburger {
     position: absolute;
 }
@@ -922,7 +927,7 @@ tr td:last-child {
     #game {
         top: 0;
     }
-    
+
     .house-container {
         width: fit-content;
     }
