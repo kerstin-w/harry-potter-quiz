@@ -39,10 +39,11 @@ function newGame(selectedHouse) {
     questionCounter = 0;
     gameQuestions = questionsArray[selectedHouse];
     availableQuestions = [...gameQuestions];
-    getNewQuestion();
 
     //Display House logo depending on which house was picked by the user
     document.getElementById('house-logo').innerHTML = `<img src="assets/images/${selectedHouse}.png" alt="Hogwards House Logo">`;
+
+    getNewQuestion();
 }
 
 
@@ -131,12 +132,13 @@ choices.forEach(choice => {
         /*Set the time out and load new question. 
         Created using information from FreeCodeCamp.
         https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/*/
-        setTimeout(() => {
+        let timeoutRef = setTimeout(() => {
             selectedChoice.classList.remove(classToApply);
             selectedChoice.parentElement.classList.remove(classToApply);
             currentCorrectAnswerBox.classList.remove('correct');
             question.classList.remove('correct-text', 'incorrect-text');
             getNewQuestion();
+            clearTimeout(timeoutRef);
         }, time);
     });
 });
@@ -200,6 +202,7 @@ saveHighScore = (e) => {
     //Scores getting sorted from highest to lowest
     highScores.push(userEndResult);
     highScores.sort((a, b) => b.score - a.score);
+    // Show at max 6 high scores
     highScores.splice(6);
 
     window.location.assign("game-score.html");
