@@ -43,8 +43,6 @@ function newGame(selectedHouse) {
 
     //Display House logo depending on which house was picked by the user
     document.getElementById('house-logo').innerHTML = `<img src="assets/images/${selectedHouse}.png" alt="Hogwards House Logo">`;
-
-    //localStorage.setItem('selectedHouse', selectedHouse);
 }
 
 
