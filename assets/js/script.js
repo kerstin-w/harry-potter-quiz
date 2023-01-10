@@ -45,7 +45,7 @@ function closeNav() {
  * Start the game with house picked by user
  */
 function newHouse(currentHouse) {
-  const housePick = currentHouse.getAttribute("data-house");
-  console.log(housePick);
-  localStorage.setItem('housePick', housePick);
+  const house = currentHouse.getAttribute("data-house");
+  console.log(house);
+  localStorage.setItem('house', house);
 }
