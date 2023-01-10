@@ -196,6 +196,8 @@ saveHighScore = (e) => {
         name: username.value,
         house: selectedHouse,
     };
+
+    //Scores getting sorted from highest to lowest
     highScores.push(userEndResult);
     highScores.sort((a, b) => b.score - a.score);
     highScores.splice(6);
