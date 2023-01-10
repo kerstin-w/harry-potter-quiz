@@ -8,6 +8,10 @@ const progressBar = document.getElementById('progress-bar');
 const myAudio = document.getElementById("audio");
 const audioOffIcon = document.getElementById("sound-off");
 const audioOnIcon = document.getElementById("sound-on");
+const username = document.getElementById("username");
+const endScore = document.getElementById("end-score");
+const saveScore = document.getElementById("save-score");
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 // Const for points for each question and maximum questions
 const pointsCorrectAnswer = 10;
@@ -48,11 +52,10 @@ function newGame(housePick) {
  * Get a new question
  * */
 function getNewQuestion() {
-    localStorage.setItem('lastScore', score);
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
 
-        //Forward user to end page once game is finished
-        return window.location.assign('game-end.html');
+        //Call function to show user the finale score and to save it
+        return finaleResult();
     }
 
     //Counter for Scoreboard. Shows user numer of question and updates progrss bar
