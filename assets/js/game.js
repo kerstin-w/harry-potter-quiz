@@ -151,6 +151,61 @@ function incrementScore(num) {
     scoreText.innerText = score;
 }
 
+/**
+ * Show users final game score evaluation of the output
+ */
+function finaleResult() {
+    //Make the Save Score Section visible
+    document.getElementById("end").classList.remove("hide");
+    document.getElementById("game").classList.add("hide");
+
+    //Display the end score of the game and an evaluation
+    if (score >= 80) {
+        endScore.innerText = `${score} Points! 
+          You are a true ${housePick}`;
+    } else if (score >= 50) {
+        endScore.innerText = `${score} Points! 
+          You did well`;
+    } else {
+        endScore.innerText = `${score} Points! 
+          Maybe another house will suit you better`;
+    }
+}
+
+/**
+ * Enable the save button
+ * */
+username.addEventListener("keyup", () => {
+    saveScore.disabled = !username.value;
+});
+
+/**
+ * Change tooltip for enabled button
+ */
+saveScore.addEventListener("mouseover", () => {
+    saveScore.setAttribute("title", "Click to save!");
+});
+
+/**
+ * Save username, score and which house was picked.
+ * Forward user to score page.
+ */
+saveHighScore = (e) => {
+    e.preventDefault();
+
+    const userEndResult = {
+        score: score,
+        name: username.value,
+        house: housePick,
+    };
+    highScores.push(userEndResult);
+    highScores.sort((a, b) => b.score - a.score);
+    highScores.splice(6);
+
+    window.location.assign("game-score.html");
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+};
+
 /*Audio Player 
 Created using information from Stackflow
 https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link*/
