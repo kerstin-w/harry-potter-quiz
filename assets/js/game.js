@@ -104,10 +104,10 @@ choices.forEach(choice => {
             selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
 
         //Array for the correct/incorrect answer to the user
-        let correctAnswerReply = ['Bombardo! Correct Answer!', 'Correct Answer! You are doing magical!', 'Yeah! Correct Answer!'];
+        const correctAnswerReply = ['Bombardo! Correct Answer!', 'Correct Answer! You are doing magical!', 'Yeah! Correct Answer!'];
         const corrrectAnswerReplyRandom = correctAnswerReply[Math.floor(Math.random() * correctAnswerReply.length)];
 
-        let wrongAnswerReply = ['Expelliarmus! We got you! Wrong Answer', 'Are you a muggle? Wrong Answer!', "Oh no! Wrong Answer!"];
+        const wrongAnswerReply = ['Expelliarmus! We got you! Wrong Answer', 'Are you a muggle? Wrong Answer!', "Oh no! Wrong Answer!"];
         const wrongAnswerReplyRandom = wrongAnswerReply[Math.floor(Math.random() * wrongAnswerReply.length)];
 
         //Add class to DIV in case choices were pictures and not text
