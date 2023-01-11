@@ -1,6 +1,6 @@
 # Harry Potter Quiz
 
-This quiz is built for all Harry Potter fans to answer questions about their favorite Hogwards house to find out how well they fit in. The user can pick between the four houses which each have 10 questions. For each question answered correctly the user will receive 10 Points. The Harry Potter quiz is fun and tests all Harry Potter fans.
+This quiz is built for all Harry Potter fans to answer questions about their favorite Hogwards house to find out how well they fit in. The user can pick between the four houses which each have 10 questions. For each question answered correctly the user will receive 10 points. The Harry Potter quiz is fun and tests all Harry Potter fans.
 
 ![Mockup](assets/readme/mockup.jpg "Mockup")
 
@@ -67,7 +67,7 @@ This quiz is built for all Harry Potter fans to answer questions about their fav
 
 [_Sourced via ColorsWall._](https://colorswall.com/palette/167374)
 
-A simple colour palette was chosen to reflect the dark and magical character of the Harry Potter world. The background has a dark gradient and the white and light turquoise fonts stand out well and is easy to read. For the game, the colours of the four Hogwards houses were adopted again to stay in the theme. However, the original yellow had to be changed to orange because of insufficient contrast.
+A simple colour palette was chosen to reflect the dark and magical character of the Harry Potter world. The background has a dark gradient and the white and light turquoise fonts stand out well and are easy to read. For the game, the colours of the four Hogwards houses were adopted to stay in the theme. However, the original yellow had to be changed to orange because of insufficient contrast.
 
 ### <a name="fonts">Fonts</a>
 
@@ -83,9 +83,9 @@ A simple colour palette was chosen to reflect the dark and magical character of 
 
 [_Sourced via KindPng._](https://www.kindpng.com/) & [_Sourced via Harry Potter Wiki._](https://harrypotter.fandom.com/)
 
-- The symbols of the four Hogward houses were used as images.
+- The symbols of the four Hogwards houses were used as images.
 
-- Images of Hogward's symbols, ghosts, and students in the game were used as choices for answers.
+- Images of Hogwards symbols, ghosts, and students in the game were used as choices for answers.
 
 ## <a name="wireframes">Wireframes</a>
 ---
@@ -141,7 +141,7 @@ Once the user clicks on the hambuger icon, the navigation will slide out. On des
 ![Game Page on Mobile](assets/readme/game-page-mobile.jpg "Game Page on Mobile")
 
 * On the Game Page, the corresponding questions and answers are loaded according to the user's previous selection. 
-At the top right, the corresponding house logo is loaded.The user can play or pause the audio via the audio icon.
+At the top right, the corresponding house logo is loaded. The user can play or pause the audio via the audio icon.
 
 ![Game Page on Desktop](assets/readme/game-page1-desktop.jpg "Game Page on Desktop")
 ![Game Page on Mobile](assets/readme/game-page1-mobile.jpg "Game Page on Mobile")

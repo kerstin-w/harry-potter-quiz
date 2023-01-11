@@ -27,8 +27,7 @@
 | All        | Navigation links to relevant pages                                                     |          Yes           |
 | All        | Navigation hover effect                                                                |          Yes           |
 | All        | Navigation pushes content to the right when toggled                                    |          Yes           |
-| All        | Navigation takes over 100% of the scrennt when toggled on mobile                       |          Yes           |
-| All        | Logo links back to homepage                                                            |          Yes           |
+| All        | Navigation takes over 100% of the screen when toggled on mobile                        |          Yes           |
 | All        | Social media icons in the footer link to the correct external link and open in new tab |          Yes           |
 | Homepage   | Harry Potter Logo links to main section to start the game                              |          Yes           |
 | Homepage   | Images and text flex responsively                                                      |          Yes           |
@@ -37,13 +36,13 @@
 | Game       | Images and text flex responsively                                                      |          Yes           |
 | Game       | New game loads a random question of the selected house                                 |          Yes           |
 | Game       | Scorebaord increments number of questions, score and progress bar                      |          Yes           |
-| Game       | Green border is applied to correct answer an red border is applied to incorrect answer |          Yes           |
-| Game       | Random Answer is displayed with appropiate class (correct/incorrect) is applied        |          Yes           |
+| Game       | Green border is applied to correct answer and red border is applied to incorrect answer|          Yes           |
+| Game       | Random answer is displayed with appropiate class (correct/incorrect) is applied        |          Yes           |
 | Game       | Push current question out of question array                                            |          Yes           |
 | Game       | Audio plays when clicked                                                               |          Yes           |
-| Game End   | Final Score is displayed                                                               |          Yes           |
-| Game End   | Appropiate text depending on score is displayed                                        |          Yes           |
-| Game End   | User can only submit when all required fields are filled in                            |          Yes           |
+| Game       | Final Score is displayed                                                               |          Yes           |
+| Game       | Appropiate text depending on score is displayed                                        |          Yes           |
+| Game       | User can only submit when all required fields are filled in                            |          Yes           |
 | Game Score | Username, score and selected house logo are displayed                                  |          Yes           |
 | Game Score | Previous scores are displayed                                                          |          Yes           |
 | Game Score | Clear button deletes local storage of scores                                           |          Yes           |
