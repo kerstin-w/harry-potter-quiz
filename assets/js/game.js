@@ -1,10 +1,10 @@
 // Declare const for DOM elements
-const question = document.getElementById('question');
-const choices = Array.from(document.getElementsByClassName('choice-text'));
-const progressText = document.getElementById('progress-text');
-const scoreText = document.getElementById('score');
+const question = document.getElementById("question");
+const choices = Array.from(document.getElementsByClassName("choice-text"));
+const progressText = document.getElementById("progress-text");
+const scoreText = document.getElementById("score");
 const selectedHouse = localStorage.getItem("house");
-const progressBar = document.getElementById('progress-bar');
+const progressBar = document.getElementById("progress-bar");
 const myAudio = document.getElementById("audio");
 const audioOffIcon = document.getElementById("sound-off");
 const audioOnIcon = document.getElementById("sound-on");
@@ -20,8 +20,8 @@ const pointsCorrectAnswer = 10;
 const maxQuestions = 10;
 
 // Const for incorrect and correct answer replies
-const correctAnswerReply = ['Bombardo! Correct Answer!', 'Correct Answer! You are doing magical!', 'Yeah! Correct Answer!'];
-const wrongAnswerReply = ['Expelliarmus! We got you! Wrong Answer', 'Are you a muggle? Wrong Answer!', "Oh no! Wrong Answer!"];
+const correctAnswerReply = ["Bombardo! Correct Answer!", "Correct Answer! You are doing magical!", "Yeah! Correct Answer!"];
+const wrongAnswerReply = ["Expelliarmus! We got you! Wrong Answer", "Are you a muggle? Wrong Answer!", "Oh no! Wrong Answer!"];
 
 //Declare variables for game
 let currentQuestion = {};
@@ -47,25 +47,23 @@ function newGame(selectedHouse) {
     availableQuestions = [...gameQuestions];
 
     //Display House logo depending on which house was picked by the user
-    document.getElementById('house-logo').innerHTML = `<img src="assets/images/${selectedHouse}.png" alt="Hogwards House Logo">`;
+    document.getElementById("house-logo").innerHTML = `<img src="assets/images/${selectedHouse}.png" alt="Hogwards House Logo">`;
 
     getNewQuestion();
 }
-
 
 /**
  * Get a new question
  * */
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-
         //Call function to show user the finale score and to save it
         return finaleResult();
     }
 
     //Counter for Scoreboard. Shows user numer of question and updates progrss bar
     questionCounter++;
-    progressText.innerText = 'Question ' + questionCounter + '/' + maxQuestions;
+    progressText.innerText = "Question " + questionCounter + "/" + maxQuestions;
     progressBar.value += 1;
 
     //Update question
@@ -74,16 +72,16 @@ function getNewQuestion() {
     question.innerText = currentQuestion.question;
 
     //Update answer
-    choices.forEach(choice => {
+    choices.forEach((choice) => {
         const choiceNumber = choice.dataset.choice;
-        const imageChoice = currentQuestion['choice' + choiceNumber];
+        const imageChoice = currentQuestion["choice" + choiceNumber];
 
         //Differentiate between image and text and display the appropriate answer
-        if (currentQuestion['choice' + choiceNumber].includes('assets/images')) {
+        if (currentQuestion["choice" + choiceNumber].includes("assets/images")) {
             choice.replaceChildren();
             choice.innerHTML += `<img src=${imageChoice} data-choice="${choiceNumber}">`;
         } else {
-            choice.innerText = currentQuestion['choice' + choiceNumber];
+            choice.innerText = currentQuestion["choice" + choiceNumber];
         }
     });
 
@@ -91,14 +89,13 @@ function getNewQuestion() {
     acceptingAnswers = true;
 }
 
-
 /**
- * Compare user's answer with correct answer. 
+ * Compare user's answer with correct answer.
  * If it is true the user will get displayed a message in green.
  * If it is wrong a message appears in red
  * */
-choices.forEach(choice => {
-    choice.addEventListener('click', e => {
+choices.forEach((choice) => {
+    choice.addEventListener("click", (e) => {
         if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
@@ -106,15 +103,14 @@ choices.forEach(choice => {
         const selectedAnswer = selectedChoice.dataset.choice;
         const currentCorrectAnswer = currentQuestion.correctAnswer;
         const currentCorrectAnswerBox = document.querySelector(`[data-choice="${currentCorrectAnswer}"]`);
-        const classToApply =
-            selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
+        const classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct" : "incorrect";
 
         //Random correct/incorrect answer replies for the user
         const corrrectAnswerReplyRandom = correctAnswerReply[Math.floor(Math.random() * correctAnswerReply.length)];
         const wrongAnswerReplyRandom = wrongAnswerReply[Math.floor(Math.random() * wrongAnswerReply.length)];
 
         //Add class to DIV in case choices were pictures and not text
-        if (selectedChoice.nodeName === 'IMG') {
+        if (selectedChoice.nodeName === "IMG") {
             selectedChoice.parentElement.classList.add(classToApply);
         } else {
             selectedChoice.classList.add(classToApply);
@@ -124,11 +120,11 @@ choices.forEach(choice => {
         if (selectedAnswer == currentQuestion.correctAnswer) {
             incrementScore(pointsCorrectAnswer);
             question.innerHTML = corrrectAnswerReplyRandom;
-            question.classList.add('correct-text');
+            question.classList.add("correct-text");
         } else {
             question.innerHTML = wrongAnswerReplyRandom;
-            question.classList.add('incorrect-text');
-            currentCorrectAnswerBox.classList.add('correct');
+            question.classList.add("incorrect-text");
+            currentCorrectAnswerBox.classList.add("correct");
         }
 
         /*Set the time out and load new question. 
@@ -137,8 +133,8 @@ choices.forEach(choice => {
         let timeoutRef = setTimeout(() => {
             selectedChoice.classList.remove(classToApply);
             selectedChoice.parentElement.classList.remove(classToApply);
-            currentCorrectAnswerBox.classList.remove('correct');
-            question.classList.remove('correct-text', 'incorrect-text');
+            currentCorrectAnswerBox.classList.remove("correct");
+            question.classList.remove("correct-text", "incorrect-text");
             getNewQuestion();
             clearTimeout(timeoutRef);
         }, time);
@@ -164,13 +160,13 @@ function finaleResult() {
     //Display the end score of the game and an evaluation
     if (score >= 80) {
         endScore.innerText = `${score} Points! 
-          You are a true ${selectedHouse}`;
+          You are a true ${selectedHouse}!`;
     } else if (score >= 50) {
         endScore.innerText = `${score} Points! 
-          You did well`;
+          You did well!`;
     } else {
         endScore.innerText = `${score} Points! 
-          Maybe another house will suit you better`;
+          Maybe another house will suit you better?!`;
     }
 }
 

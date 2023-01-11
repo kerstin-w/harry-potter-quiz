@@ -14,14 +14,14 @@ const elmAddMargin = [mainContent, hamburger, headerLogo];
  */
 function openNav() {
   for (let i = 0; i < elmAddMargin.length; i++) {
-    elmAddMargin[i].classList.add('margin-nav-open');
+    elmAddMargin[i].classList.add("margin-nav-open");
   }
 
-  sideNav.classList.add('width-nav-open');
+  sideNav.classList.add("width-nav-open");
   hamburger.style.visibility = "hidden";
   houseLogo.style.visibility = "hidden";
   audioPlayer.style.visibility = "hidden";
-  audioPlayer.classList.add('margin-nav-open');
+  audioPlayer.classList.add("margin-nav-open");
 }
 
 /**
@@ -29,22 +29,22 @@ function openNav() {
  */
 function closeNav() {
   for (let i = 0; i < elmAddMargin.length; i++) {
-    elmAddMargin[i].classList.remove('margin-nav-open');
+    elmAddMargin[i].classList.remove("margin-nav-open");
   }
 
-  sideNav.classList.remove('width-nav-open');
+  sideNav.classList.remove("width-nav-open");
   hamburger.style.visibility = "visible";
   houseLogo.style.visibility = "visible";
   audioPlayer.style.visibility = "visible";
-  audioPlayer.classList.remove('margin-nav-open');
+  audioPlayer.classList.remove("margin-nav-open");
 }
 
-//Game 
+//Game
 
 /**
  * Start the game with house picked by user
  */
 function newHouse(currentHouse) {
   const house = currentHouse.getAttribute("data-house");
-  localStorage.setItem('house', house);
+  localStorage.setItem("house", house);
 }

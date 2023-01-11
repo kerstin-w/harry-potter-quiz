@@ -1,6 +1,6 @@
 // Declare const for DOM elements
-const highScoresList = document.getElementById('highScoresList');
-const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+const highScoresList = document.getElementById("highScoresList");
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 /**
  * Show High Score List
@@ -8,7 +8,7 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
  */
 highScoresList.innerHTML = highScores
 
-    .map(score => {
+    .map((score) => {
         return `
     <tr>
     <td>${score.name}</td>
@@ -20,5 +20,5 @@ highScoresList.innerHTML = highScores
 
 function deleteStorage() {
     localStorage.clear();
-    return window.location.assign('./index.html');
+    return window.location.assign("./index.html");
 }
