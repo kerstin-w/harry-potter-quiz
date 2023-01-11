@@ -1,6 +1,6 @@
 # Harry Potter Quiz
 
-This quiz is built for all Harry Potter fans to answer questions about their favorite Hogwards house to find out how well they fit in. The user can pick between the four houses which each have 10 questions. For each question answered correctly. The Harry Potter quiz is fun and tests all Harry Potter fans.
+This quiz is built for all Harry Potter fans to answer questions about their favorite Hogwards house to find out how well they fit in. The user can pick between the four houses which each have 10 questions. For each question answered correctly the user will receive 10 Points. The Harry Potter quiz is fun and tests all Harry Potter fans.
 
 ![Mockup](assets/readme/mockup.jpg "Mockup")
 
@@ -67,15 +67,15 @@ This quiz is built for all Harry Potter fans to answer questions about their fav
 
 [_Sourced via ColorsWall._](https://colorswall.com/palette/167374)
 
-A simple color palette was chosen to reflect the dark and magical character of the Harry Potter world. The background has a dark gradient and the white or light turquoise font stands out well and is easy to read. For the game, the colors of the four Hogwards houses were adopted again to stay in the theme. However, the original yellow had to be changed to orange because of insufficient contrast.
+A simple colour palette was chosen to reflect the dark and magical character of the Harry Potter world. The background has a dark gradient and the white and light turquoise fonts stand out well and is easy to read. For the game, the colours of the four Hogwards houses were adopted again to stay in the theme. However, the original yellow had to be changed to orange because of insufficient contrast.
 
 ### <a name="fonts">Fonts</a>
 
-**Heading:** For Heading 1, ""Harry Potter" font was selected, which is very unique and directly recognized by users. This stands out beautifully as the heading.
+**Heading:** For Heading 1, "Harry Potter" font was selected, which is very unique and directly recognized by users. This stands out beautifully as the heading.
 
 [_Sourced via CDN Fonts._](https://www.cdnfonts.com/harry-potter.font)
 
-**Body:** “Nunito”. This font is simple, modern open and easy to read. The round cap strokes matches well with the round box design on the page.
+**Body:** “Nunito” This font is simple, modern open and easy to read. The round cap strokes matches well with the round box design on the page.
 
 [_Sourced via Google Fonts._](https://fonts.google.com/)
 
@@ -89,6 +89,8 @@ A simple color palette was chosen to reflect the dark and magical character of t
 
 ## <a name="wireframes">Wireframes</a>
 ---
+Deviations from the original wireframe:
+* On the advice of my mentor, I moved the content of the Game-End page to the Game-page.  This will be displayed after all 10 questions have been completed. The idea behind this was to prevent the game-end page from being called by typing in the url bar, even though the game was not completed. 
 
 [Desktop](assets/readme/desktop.pdf)
 
@@ -103,8 +105,8 @@ A simple color palette was chosen to reflect the dark and magical character of t
 ### <a name="homepage">Home Page</a>
 
 - An appealing design and an intuitive navigation and orientation on the website.
-- A website which is fully responsive on all screen sizes
-- Easy access to start the game
+- A website which is fully responsive on all screen sizes.
+- Easy access to start the game.
 
 ![Homepage on Desktop](assets/readme/homepage.jpg "Homepage on Desktop")
 ![Homepage on Mobile](assets/readme/homepage-mobile.jpg "Homepage on Mobile")
@@ -144,21 +146,21 @@ At the top right, the corresponding house logo is loaded.The user can play or pa
 ![Game Page on Desktop](assets/readme/game-page1-desktop.jpg "Game Page on Desktop")
 ![Game Page on Mobile](assets/readme/game-page1-mobile.jpg "Game Page on Mobile")
 
-* The user receives feedback in text form once an answer has been selected, indicating whether the answer was correct or incorrect. Furthermore, the correct answer choice is also marked in color. The scoreboard shows which question the user is currently on. The progress is also displayed graphically in the progress bar. For each correct answer the user receives 10 points which are added up in the score counter. 
+* The user receives feedback in text form once an answer has been selected, indicating whether the answer was correct or incorrect. Furthermore, the correct answer choice is also marked in colour. The scoreboard shows which question the user is currently on. The progress is also displayed graphically in the progress bar. For each correct answer the user receives 10 points which are added up in the score counter. 
 
-### <a name="game-end">Game End Page</a>
+### <a name="game-end">Game End Section</a>
 
 ![Page End Page on Desktop](assets/readme/game-end-desktop.jpg "Game End Page on Desktop")
 ![Page End Page on Mobile](assets/readme/game-end-mobile.jpg "Game End Page on Mobile")
 
-* When the user has completed the 10 house questions, the user is redirected automatically to the game end page. The user will get the final score and a message, depending on the score. The user can enter their username and save the points. The button is disabled and will be enabled as soon as the input field is filled in.
+* When the user has completed the 10 house questions, the user will see the final score and a message, depending on the score. The user can enter their username and save the points. The button is disabled and will be enabled as soon as the input field is filled in.
 
 ### <a name="game-score">Game Score Page</a>
 
 ![Page Score Page on Desktop](assets/readme/game-score-desktop.jpg "Game Score Page on Desktop")
 ![Page Score Page on Mobile](assets/readme/game-score-mobile.jpg "Game Score Page on Mobile")
 
-* The user is presented with a table with the current score and the saved ones. The name of the score and the house that was played are displayed.
+* The user is presented with a table with the current score and the saved ones. The name of the score and the house that was played are displayed. The scores are sorted from highest to lowest.
 
 ### <a name="instruction">Instruction Page</a>
 

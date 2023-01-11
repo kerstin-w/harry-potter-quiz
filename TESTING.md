@@ -79,12 +79,6 @@ The initial test returned an error for the audio type on the Game page and a war
 
 </details>
 <details>
-<summary>Game End</summary>
-
-![Screenshot of WC3 testing for Schedulen page](assets/testing/w3c-end.jpg)
-
-</details>
-<details>
 <summary>Score Page</summary>
 
 ![Screenshot of WC3 testing for Signup page](assets/testing/w3c-score2.jpg)
@@ -169,12 +163,6 @@ Lighthouse was used (accessed through Developer Tools in Chrome) to analyse for 
 
 </details>
 <details>
-<summary>Game End Page</summary>
-
-![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-desktop-end.jpg)
-
-</details>
-<details>
 <summary>Score Page</summary>
 
 ![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-desktop-score.jpg)
@@ -199,12 +187,6 @@ Lighthouse was used (accessed through Developer Tools in Chrome) to analyse for 
 <summary>Game Page</summary>
 
 ![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-mobile-game.jpg)
-
-</details>
-<details>
-<summary>Game End Page</summary>
-
-![Screenshot of Lighthouse Desktop Validator Results for Location page](assets/testing/lh-mobile-end.jpg)
 
 </details>
 <details>
