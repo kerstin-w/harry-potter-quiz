@@ -8,6 +8,8 @@ const progressBar = document.getElementById('progress-bar');
 const myAudio = document.getElementById("audio");
 const audioOffIcon = document.getElementById("sound-off");
 const audioOnIcon = document.getElementById("sound-on");
+const gameEndSection = document.getElementById("end")
+const gameSection = document.getElementById("game")
 const username = document.getElementById("username");
 const endScore = document.getElementById("end-score");
 const saveScore = document.getElementById("save-score");
@@ -16,6 +18,10 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 // Const for points for each question and maximum questions
 const pointsCorrectAnswer = 10;
 const maxQuestions = 10;
+
+// Const for incorrect and correct answer replies
+const correctAnswerReply = ['Bombardo! Correct Answer!', 'Correct Answer! You are doing magical!', 'Yeah! Correct Answer!'];
+const wrongAnswerReply = ['Expelliarmus! We got you! Wrong Answer', 'Are you a muggle? Wrong Answer!', "Oh no! Wrong Answer!"];
 
 //Declare variables for game
 let currentQuestion = {};
@@ -93,7 +99,6 @@ function getNewQuestion() {
  * */
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-
         if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
@@ -104,11 +109,8 @@ choices.forEach(choice => {
         const classToApply =
             selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
 
-        //Array for the correct/incorrect answer to the user
-        const correctAnswerReply = ['Bombardo! Correct Answer!', 'Correct Answer! You are doing magical!', 'Yeah! Correct Answer!'];
+        //Random correct/incorrect answer replies for the user
         const corrrectAnswerReplyRandom = correctAnswerReply[Math.floor(Math.random() * correctAnswerReply.length)];
-
-        const wrongAnswerReply = ['Expelliarmus! We got you! Wrong Answer', 'Are you a muggle? Wrong Answer!', "Oh no! Wrong Answer!"];
         const wrongAnswerReplyRandom = wrongAnswerReply[Math.floor(Math.random() * wrongAnswerReply.length)];
 
         //Add class to DIV in case choices were pictures and not text
@@ -156,8 +158,8 @@ function incrementScore(num) {
  */
 function finaleResult() {
     //Make the Save Score Section visible
-    document.getElementById("end").classList.remove("hide");
-    document.getElementById("game").classList.add("hide");
+    gameEndSection.classList.remove("hide");
+    gameSection.classList.add("hide");
 
     //Display the end score of the game and an evaluation
     if (score >= 80) {
