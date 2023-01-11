@@ -119,6 +119,10 @@ a {
     margin: 0 auto;
 }
 
+.header-logo div {
+    margin: 0 auto;
+}
+
 .logo {
     width: 5rem;
     cursor: pointer;
@@ -835,6 +839,13 @@ tr td:last-child {
     }
 
     .header-logo a {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .header-logo div {
         display: flex;
         justify-content: space-around;
         flex-direction: row-reverse;
