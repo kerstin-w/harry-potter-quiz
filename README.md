@@ -242,6 +242,7 @@ This project was deployed from its Github repository to Github Pages:
 - [Google Fonts](https://fonts.google.com): Used as font library
 - [CDN Fonts](https://www.cdnfonts.com/): Used as font library
 - [Remove](https://www.remove.bg/de): Used to create a transparent PNG
+- [MP3 Cut](https://mp3cut.net/de/): Used to cut audio file
 - [RealFaviconGenerator](https://realfavicongenerator.net/): Used to create a Favicon
 
 ### Code
